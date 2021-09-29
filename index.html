@@ -1,0 +1,513 @@
+<!--
+    This webpage was heavily inspired by the web-page of the grand atom.io-project.
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>conjoon</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta name="description" content=""/>
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+
+        <style type="text/css">
+
+            * {
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+
+          /** common **/
+
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                min-width: auto;
+                margin: 0;
+                color: #574c4f;
+                font: 16px/1.5 normal normal;
+                font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+                background-color: #303030;
+                color: #d6d6d6;
+            }
+
+            .bold {
+                font-weight:bold;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .wrapper {
+                width: 860px;
+                margin: 0 auto;
+                padding-left: 40px;
+                padding-right: 40px;
+                overflow: hidden;
+            }
+
+            .tagline {
+                margin: 0 0 .5em 0;
+                font-size: 2.3em;
+                letter-spacing: 0.05em;
+                font-weight: 200;
+            }
+
+
+            /** .main **/
+
+            .main {
+                font-weight: 300;
+                background-color: #222222;
+            }
+
+            .main h3 {
+                margin: 0;
+                font-weight: 200;
+                font-size: 2em;
+                letter-spacing: 0.05em;
+            }
+
+            .main,
+            .main a {
+                color: #35baf6;
+                text-decoration: none;
+            }
+
+            .main ::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                top: -2px;
+                left: 0;
+            }
+
+
+            .main .button {
+                display: inline-block;
+                background-color: #35baf6;
+                color: #303030;
+                padding: .5em 1em;
+                line-height: inherit;
+                font-size: inherit;
+                font-weight: 500;
+                text-decoration: none;
+                border-radius: 5px;
+
+            }
+
+            .main .section {
+                position: relative;
+                overflow: hidden;
+            }
+
+            .main .screenshot {
+                bottom: 50%;
+                right: 50%;
+                margin-bottom: -244px;
+                margin-right: 40px;
+                width: 780px;
+                height: 488px;
+                border-radius: 5px;
+                box-shadow: 0 20px 30px rgb(0 0 0 / 50%);
+                transition: filter 2s;
+            }
+
+            .main .main-bg {
+                position: absolute;
+            }
+
+
+            .main .wrapper {
+                padding-top: 140px;
+                padding-bottom: 200px;
+            }
+
+
+            .main .column-wrap .column:first-child {
+                padding-right: 66px;
+            }
+
+            .main .column {
+                width: 50%;
+            }
+
+            .main .column-wrap .column:last-child {
+                padding-left: 60px;
+            }
+
+            .main .stack {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 100px 66px;
+            }
+            .main h4 {
+                margin-top: 0;
+                margin-bottom: 0.25em;
+                font-weight: 500;
+                font-size: 1.2em;
+            }
+
+            /** .download **/
+
+            .download-block .version {
+                display: block;
+                font-size: 1.4em;
+                line-height: 2rem;
+                letter-spacing: .15em;
+                font-weight: 500;
+            }
+
+
+            .section-download {
+                text-align: center;
+                background: #303030;
+            }
+
+            .download-header {
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .download-header-item {
+                flex: 1;
+            }
+
+            .download-block {
+                display: inline-flex;
+                margin: 4em 0 0 0;
+                border-radius: 20px;
+                border: 1px solid #4e4b4d;
+                list-style: none;
+                padding: 0;
+                flex-direction: column;
+            }
+
+
+            .download-block .button {
+                display: block;
+                font-size: 1.1em;
+                padding: 1em 1.5em;
+                white-space: nowrap;
+            }
+
+
+            .download-block li {
+                padding: 2em 1em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .download-block li + li {
+                border-left: none;
+                border-top: 1px solid #4e4b4d;
+            }
+
+            .download-block li:last-child {
+                padding: 1em;
+            }
+
+            /** .section **/
+
+            .section-contact {
+                margin-bottom: -40px;
+                border-top: 1px solid #1a191a;
+                background-color: #303030;
+            }
+
+            .section-demo .screenshot {
+                margin-left: 40px;
+            }
+
+            .section-demo .wrapper {
+                padding-left: 470px;
+            }
+
+            .section-project .screenshot {
+                left: 50%;
+                margin-left: 40px;
+            }
+
+            .section-project .wrapper {
+                padding-right: 470px;
+            }
+
+            .section-stack h3 {
+                margin-bottom: 50px;
+            }
+
+
+            /** .column **/
+            .column-wrap .column:first-child {
+                padding-left: 0;
+                padding-right: 20px;
+            }
+
+            .column-wrap .column {
+                float: left;
+                padding-left: 20px;
+                padding-right: 20px;
+                vertical-align: top;
+            }
+
+
+            .column-wrap .column:last-child {
+                padding-left: 20px;
+                padding-right: 0;
+            }
+
+            .wrapper.no-pad {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            /** .footer **/
+
+            .footer-pad {
+                height: 95px;
+            }
+
+            .footer .left {
+                float: left;
+                margin: 0;
+                padding: 0;
+            }
+
+            .footer .right {
+                float: right;
+            }
+
+            .footer {
+                background-color: #222222;
+                height: 55px;
+                padding: 15px;
+            }
+
+            .footer a {
+                color: #d6d6d6;
+            }
+
+            .content {
+                min-height: 100%;
+                height: auto !important;
+                height: 100%;
+                margin-bottom: -55px;
+            }
+
+            .stack-item {
+                position: relative;
+                padding-left: 60px;
+            }
+
+            .icon {
+                position: absolute;
+                left: 0;
+                display: inline-block;
+            }
+
+            .icon img {
+                height:32px;
+                width:32px;
+            }
+
+        </style>
+
+
+    </head>
+    <body>
+
+
+        <div class="content">
+
+           <div class="main">
+
+                <section class="section section-download">
+                    <div class="wrapper">
+                        <header class="download-header">
+                            <ul class="download-header-item download-block">
+                                <li>
+                                    <span>conjoon</span>
+                                </li>
+                                <li>
+                                    <span class="version">0.1.1</span>
+                                    <a href="https://github.com/conjoon/conjoon/releases">Release notes</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/conjoon/conjoon/releases" class="button ">Download</a>
+                                </li>
+                            </ul>
+                        </header>
+                        <div class="tagline-wrap">
+                            <h1 class="tagline">A pluggable email client built for the web.</h1>
+                        </div>
+                   </div>
+                </section>
+
+
+                <section id="project" class="section section-project">
+                    <div class="wrapper">
+                        <h3>Everything you'd expect</h3>
+                        <p>
+                            conjoon is a JavaScript webmail client based on <a class="bold" href="https://github.com/coon-js">coon.js</a>,
+                            backed by the <a class="bold" href="https://sencha.com">Sencha ExtJS framework</a>.
+                        </p>
+                        <p>
+                            Built for modern browsers, conjoon provides a state-of-the art usability, driven
+                            by the web's newest technologies.
+                        </p>
+                        <div>
+                            <img class="main-bg screenshot" src="./screen.png">
+                        </div>
+                        <p>
+                            <a href="https://conjoon.github.io/demo" class="button">View Demo</a>
+                        </p>
+                    </div>
+                </section>
+
+
+               <section id="project" class="section section-demo">
+                   <div class="wrapper">
+
+                       <div>
+                           <img class="main-bg screenshot" src="./source.png">
+                       </div>
+
+                       <h3>Powered by JavaScript</h3>
+                       <p>
+                           All packages are <a class="bold" href="https://npmjs.org/@conjoon">installable
+                           via NPM</a> which allows for easy package-development and -deployment. conjoon provides an
+                           open architecture: Need a feature that is not available in the repository yet? Start coding away
+                           and plug your sources into the backplate during development or runtime!
+                       </p>
+
+                       <p>
+                           <a href="https://github.com/conjoon" class="button">Learn more</a>
+                       </p>
+                   </div>
+               </section>
+
+               <section class="section section-stack">
+                   <div class="wrapper no-pad">
+
+                       <h3>Technology Stack</h3>
+
+                       <div class="stack">
+
+                           <div class="stack-item">
+                               <span class="icon"><img src="./coonjs.png" /></span>
+                               <h4>coon.js</h4>
+                               <p><a href="https://github.com/coon-js" class="bold">coon.js</a> is a toolset for rapid Sencha ExtJS application building.</p>
+                           </div>
+
+                           <div class="stack-item">
+                               <span class="icon"><img src="./l8js.png" /></span>
+                               <h4>l8js</h4>
+                               <p><a href="https://github.com/l8js/l8" class="bold">l8js</a> is a small and lightweight JavaScript library and
+                                   provides wrappers and thin abstraction layers to ease the process of accessing and manipulating data in JavaScript.
+                           </div>
+
+                           <div class="stack-item">
+                               <span class="icon"><img src="./sencha.png" /></span>
+                               <h4>Sencha ExtJS</h4>
+                               <p><a href="https://sencha.com" class="bold">Sencha Ext JS</a> is a JavaScript framework for building data-intensive, cross-platform web
+                                   and mobile applications.</p>
+                           </div>
+
+                           <div class="stack-item">
+                               <span class="icon"><img src="./bryntum.png" /></span>
+                               <h4>Siesta</h4>
+                               <p><a href="https://www.bryntum.com/products/siesta/" class="bold">Siesta</a> is a JavaScript unit and UI testing tool which can run tests in web pages or in Node.js processes. Siesta has a powerful event recorder & player and a scalable automation package with cloud testing support.</p>
+                           </div>
+
+                           <div class="stack-item">
+                               <span class="icon"><img src="./npm.png" /></span>
+                               <h4>NPM</h4>
+                               <p>All packages used in and with conjoon are available via NPM, making dependency management and builds easy.</p>
+                           </div>
+
+                           <div class="stack-item">
+                               <span class="icon"><img src="./github.png" /></span>
+                               <h4>Github</h4>
+                               <p>All packages used in and with conjoon are version controlled via Github.</p>
+                           </div>
+
+                       </div>
+
+
+                   </div>
+               </section>
+
+
+
+               <section class="section section-contact">
+                    <a name="contact"></a>
+                    <div class="wrapper">
+                        <div class="column-wrap">
+                            <div class="column">
+                                <h3>Open source</h3>
+                                <p>conjoon is proud to be open source.</p>
+                                <p>
+                                    <a href="https://github.com/conjoon/conjoon" class="button">Fork me on GitHub</a>
+                                </p>
+                            </div>
+                            <div class="column">
+                                <h3>Resources</h3>
+                                <table class="table-resources">
+                                    <tbody>
+                                    <tr>
+                                        <td>GitHub</td>
+                                        <td><a href="https://github.com/conjoon">github.com/conjoon</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Twitter</td>
+                                        <td><a href="https://twitter.com/thorstensuckow">@thorstensuckow</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blog</td>
+                                        <td><a href="https://medium.com/@thorstensuckow">Blog</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+        <div class="footer-pad"></div>
+
+        <footer>
+            <div class="footer">
+                <div class="wrapper no-pad">
+                    <ul class="left">
+                        <li><a href="https://github.com/ThorstenSuckow">Contact</a></li>
+                    </ul>
+                    <div class="right">
+                        <a href="https://github.com/conjoon">Hosted at Github</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
