@@ -32,6 +32,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=10, user-scalable=yes">
 	<title>conjoon</title>
 
+  <style type="text/css">
+
+    body {
+      background-color:#303030!important;
+    }
+
+    #splash {
+      position:absolute;
+      width:100%;
+      animation: fadeIn linear 9s;
+      margin-top:20%;
+      font-size:18px;
+      text-align:center;
+      color:#d6d6d6;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity:0;}
+      100% {opacity:1;}
+    }
+  </style>
+
   <script type="text/javascript">
     var Ext = Ext || {};
     Ext.beforeLoad = function (tags) {
@@ -119,7 +141,10 @@ Microloader.appCacheState||Microloader.updatedManifest?(Microloader.appUpdate={u
 content.substring(0,1);'/'==checksumType?content.substring(2,hashLn+2)!==hash&&(passed=!1):'f'==checksumType?content.substring(10,hashLn+10)!==hash&&(passed=!1):'.'==checksumType&&content.substring(1,hashLn+1)!==hash&&(passed=!1);return passed},parseResult:function(result){var rst={};!result.exception&&0!==result.status||Boot.env.phantom?200<=result.status&&300>result.status||304===result.status||Boot.env.phantom||0===result.status&&0<result.content.length?rst.content=result.content:rst.error=!0:
 rst.error=!0;return rst}};return Microloader}();Ext.manifest=Ext.manifest||'bootstrap';Ext.Microloader.run();</script>
 </head>
-  <body style="background:#303030">
-
+  <body>
+    <div id="splash">
+        <div>LOADING...</div>
+      <i style="margin:20px;" class="fa fa-spinner fa-spin"></i>
+    </div>
   </body>
 </html>

@@ -1,0 +1,15 @@
+{
+    "resources": {
+        "templates": {
+            "html": {
+                "editor": "resources/templates/html/editor.html.tpl",
+                "reader": "resources/templates/html/reader.html.tpl"
+            }
+        }
+    },
+    "service": {
+        "rest-imap" :  {
+            "base" : "https://php-ms-imapuser.ddev.site/rest-imap/api/v0.1"
+        }
+    }
+}
