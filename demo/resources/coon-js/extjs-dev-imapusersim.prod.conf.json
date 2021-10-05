@@ -1,6 +1,6 @@
 {
     "auth": {
-        "url": "https://php-ms-imapuser.ddev.site/api/v.*?/auth(/.*)?",
+        "url": "https://php-ms-imapuser.ddev.site/rest-imapuser/api/v.*?/auth(/.*)?",
         "enabled": true,
         "delay": 250
     }
