@@ -1,0 +1,7 @@
+{
+    "service": {
+        "rest-imapuser" :  {
+            "base" : "https://php-ms-imapuser.ddev.site/rest-imapuser/api/v0/"
+        }
+    }
+}
