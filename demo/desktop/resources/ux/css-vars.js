@@ -5262,24 +5262,26 @@ var __rt_context = __rt.context,
     __rt__scopeStack = __rt._scopeStack;
 __rt_setDynamic("$dark_mode", __rt_getGlobalDefault("$dark_mode") || __False, 0);
 __rt_setDynamic("$signal-color", __rt_getGlobalDefault("$signal_color") || (__rt_test(__rt_get("$dark_mode")) ? __ColorRGBA.fromHex("#d4f400") : __ColorRGBA.fromHex("#ff4500")), 1);
+__rt_setDynamic("$signal-color-alt", __rt_getGlobalDefault("$signal_color_alt") || (__rt_test(__rt_get("$dark_mode")) ? __ColorRGBA.fromHex("#ff4398") : __ColorRGBA.fromHex("#ff4398")), 2);
 __rt_setDynamic("$warning-background-color", __rt_getGlobalDefault("$warning_background_color") || __rt_box(__rt_registered.rgb.apply(__rt.registered, __rt_applySpreadArgs([
     new __Numeric(255), 
     new __Numeric(178), 
     new __Numeric(66), 
-    __udf]))), 2);
+    __udf]))), 3);
 __rt_setDynamic("$warning-color", __rt_getGlobalDefault("$warning_color") || __rt_box(__rt.registered.rgb.apply(__rt.registered, __rt_applySpreadArgs([
     new __Numeric(255), 
     new __Numeric(255), 
     new __Numeric(255), 
-    __udf]))), 3);
-__rt_setDynamic("$info-background-color", __rt_getGlobalDefault("$info_background_color") || __ColorRGBA.fromHex("#1b6383"), 4);
-__rt_setDynamic("$info-color", __rt_getGlobalDefault("$info_color") || __ColorRGBA.fromHex("#ffffff"), 5);
-__rt_setDynamic("$success-background-color", __rt_getGlobalDefault("$success_background_color") || __ColorRGBA.fromHex("#26cc00"), 6);
-__rt_setDynamic("$success-color", __rt_getGlobalDefault("$success_color") || __ColorRGBA.fromHex("#000000"), 7);
+    __udf]))), 4);
+__rt_setDynamic("$info-background-color", __rt_getGlobalDefault("$info_background_color") || __ColorRGBA.fromHex("#1b6383"), 5);
+__rt_setDynamic("$info-color", __rt_getGlobalDefault("$info_color") || __ColorRGBA.fromHex("#ffffff"), 6);
+__rt_setDynamic("$success-background-color", __rt_getGlobalDefault("$success_background_color") || __ColorRGBA.fromHex("#26cc00"), 7);
+__rt_setDynamic("$success-color", __rt_getGlobalDefault("$success_color") || __ColorRGBA.fromHex("#000000"), 8);
 },
  {
 	":root": [
 		"signal-color",
+		"signal-color-alt",
 		"warning-background-color",
 		"warning-color",
 		"info-background-color",

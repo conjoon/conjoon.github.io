@@ -13,7 +13,8 @@
             ]
         },
         "application": {
-            "announce": {
+            "title": "conjoon demo",
+            "announcement": {
                 "message": "Thank you for using conjoon. Leave a ⭐ at <a target=\"_blank\" href=\"https://github.com/conjoon/conjoon\">Github</a> if you like it!",
                 "type": "success"
             }
