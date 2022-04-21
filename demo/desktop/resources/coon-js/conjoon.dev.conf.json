@@ -9,6 +9,17 @@
                     "cmp": "cn_navport-tbar",
                     "pclass": "conjoon.theme.material.plugin.ModeSwitchPlugin",
                     "event": "beforerender"
+                },
+                {
+                    "cmp": "cn_navport-conctr",
+                    "pclass": "conjoon.plugin.WorkbenchQuotes",
+                    "event": "afterrender",
+                    "args": [
+                        {
+                            "template": "./resources/templates/html/workbench_quotes.html.tpl",
+                            "url": "./resources/json/workbench_quotes.list.json"
+                        }
+                    ]
                 }
             ]
         },
