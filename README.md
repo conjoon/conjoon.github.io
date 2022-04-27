@@ -5,8 +5,6 @@ Welcome to the repo for the conjoon-website. This is the source for https://conj
 conjoon deeply appreciates contributions from the community. Feel free to file issue reports and feature/pull requests.
 
 
-## Website
-
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
 ### Installation

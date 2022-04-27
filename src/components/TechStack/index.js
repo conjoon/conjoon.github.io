@@ -1,6 +1,30 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+/**
+ * conjoon
+ * conjoon.github.io
+ * Copyright (C) 2022 Thorsten Suckow-Homberg https://github.com/conjoon/conjoon.github.io
+ *
+ * Permission is hereby granted, free of charge, to any person
+ * obtaining a copy of this software and associated documentation
+ * files (the "Software"), to deal in the Software without restriction,
+ * including without limitation the rights to use, copy, modify, merge,
+ * publish, distribute, sublicense, and/or sell copies of the Software,
+ * and to permit persons to whom the Software is furnished to do so,
+ * subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included
+ * in all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+ * OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ * IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+ * DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+ * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
+ * USE OR OTHER DEALINGS IN THE SOFTWARE.
+ */
+
+import React from "react";
+import styles from "./styles.module.css";
 
 const stackItems = [{
     title: "Sencha Ext JS",
@@ -32,39 +56,31 @@ const stackItems = [{
     link: "https://lumen.laravel.com/",
     description: "\"rest-api-email\" is the reference backend for conjoon and written in PHP & built with Lumen ",
     img: "./img/logos/lumen.png",
-    imgStyle: {background:"white",borderRadius:20}
-}/*, {
-    title: "ddev",
-    description: "",
-    img: ""
-}, {
-    title: "Docker",
-    description: "",
-    img: ""
-}*/]
+    imgStyle: {background: "white",borderRadius: 20}
+}];
 
 
-function Item({img, title, link, description, imgStyle}) {
-  return (
+function Item ({img, title, link, description, imgStyle}) {
+    return (
 
         <div className={styles.stackItem}>
             <span className={styles.icon}><img style={imgStyle ? imgStyle : {}} src={img}/></span>
-            <h4><a class={styles.link} target="_blank" href={link}>{title}</a></h4>
+            <h4><a className={styles.link} target="_blank" href={link} rel="noreferrer">{title}</a></h4>
             <p className="text--justify">{description}</p>
         </div>
 
-  );
+    );
 }
 
-export default function TechStack() {
-  return (
-    <section className={styles.techStack}>
-        <h1 className={styles.header}>Tech Stack</h1>
-        <div className={styles.grid}>
-           {stackItems.map((props, idx) => (
-            <Item key={idx} {...props} />
-          ))}
-        </div>
-    </section>
-  );
+export default function TechStack () {
+    return (
+        <section className={styles.techStack}>
+            <h1 className={styles.header}>Built with</h1>
+            <div className={styles.grid}>
+                {stackItems.map((props, idx) => (
+                    <Item key={idx} {...props} />
+                ))}
+            </div>
+        </section>
+    );
 }
