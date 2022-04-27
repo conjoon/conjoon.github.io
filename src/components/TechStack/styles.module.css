@@ -1,0 +1,45 @@
+
+.techStack {
+  margin:60px 0 40px 0;
+}
+
+.link {
+  color:var(--ifm-heading-color);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 70px 100px;
+  max-width:860px;
+  margin:auto;
+}
+
+@media screen and (max-width: 996px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin:0px 20px 0px 20px;
+  }
+}
+
+.header {
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.grid .icon {
+  position: absolute;
+  left: 0;
+  display: inline-block;
+}
+
+.grid .stackItem {
+  position: relative;
+  padding-left: 60px;
+}
+
+.stackItem .icon img {
+  height: 32px;
+  width: 32px;
+}
