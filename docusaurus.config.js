@@ -53,8 +53,7 @@ const config = {
                 blog: {
                     showReadingTime: true,
                     // Please change this to your repo.
-                    editUrl:
-            "https://github.com/conjoon/conjoon/"
+                    editUrl: "https://github.com/conjoon/conjoon/"
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css")
@@ -87,7 +86,7 @@ const config = {
                     "aria-label": "GitHub repository"
                 },
                 {
-                    href: "https://conjoon.stoplight.io/docs/rest-api-email",
+                    href: "https://conjoon.stoplight.io/docs/rest-api-description/",
                     className: "header-stoplight-link",
                     position: "right",
                     "aria-label": "REST API docs"
@@ -111,11 +110,11 @@ const config = {
                     items: [
                         {
                             label: "GitHub",
-                            href: "https://github.com/facebook/docusaurus"
+                            href: "https://github.com/conjoon"
                         },
                         {
                             label: "REST API",
-                            href: "https://conjoon.stoplight.io/docs/rest-api-email"
+                            href: "https://conjoon.stoplight.io/docs/rest-api-description/"
                         }
                     ]
                 },
@@ -146,7 +145,7 @@ const config = {
                     ]
                 }
             ],
-            copyright: `Copyright © 2007-${new Date().getFullYear()} conjoon Open Source project. This website is proudly built with <a href="https://docusaurus.io">Docusaurus</a>.`
+            copyright: `Copyright © 2007-${new Date().getFullYear()} Thorsten Suckow-Homberg / conjoon Open Source project. This website is proudly built with <a href="https://docusaurus.io">Docusaurus</a>.`
         },
         prism: {
             theme: darkCodeTheme
