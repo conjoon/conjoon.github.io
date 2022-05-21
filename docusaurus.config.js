@@ -74,9 +74,9 @@ const config = {
             items: [
                 {
                     type: "doc",
-                    docId: "intro",
+                    docId: "introduction",
                     position: "left",
-                    label: "Installation"
+                    label: "Docs"
                 },
                 {to: "demo/index.html", target: "_blank", label: "Demo", position: "left"},
                 {
@@ -100,8 +100,12 @@ const config = {
                     title: "Docs",
                     items: [
                         {
+                            label: "Quick Start",
+                            to: "docs/quickstart"
+                        },
+                        {
                             label: "Installation",
-                            to: "docs/intro"
+                            to: "docs/installation"
                         }
                     ]
                 },

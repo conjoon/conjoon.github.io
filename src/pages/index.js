@@ -32,25 +32,37 @@ import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import TechStack from "@site/src/components/TechStack";
 
+
 function HomepageHeader () {
     const {siteConfig} = useDocusaurusContext();
     return (
         <header data-theme="dark" className={clsx("hero hero--primary", styles.heroBanner)}>
             <div className="container">
                 <div className="col left">
-                    <div className="hero__title">{siteConfig.title}</div>
-                    <p className="hero__subtitle">{siteConfig.tagline}.</p>
+                    <div className="hero__title">
+                        {siteConfig.title}
+                    </div>
+                    <p className="hero__subtitle">
+                        {siteConfig.tagline}.
+                    </p>
                     <div style={{marginTop: 30}}>
                   Lightweight, feature rich email client.
                     </div>
                     <div>
                   Built with JavaScript for the web.
                     </div>
-                    <div  style={{marginTop: 80}} className={styles.buttons}>
+                    <div  style={{marginTop: 60}} className={styles.buttons}>
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs/intro">
-                      Get Started →️
+                             Get Started ⚡️
+                        </Link>
+                    </div>
+                    <div  style={{marginTop: 20}} className={styles.buttons}>
+                        <Link
+                            className="button prom button--secondary button--lg"
+                            to="/demo/index.html">
+                            Try a Demo 🎬️
                         </Link>
                     </div>
                 </div>

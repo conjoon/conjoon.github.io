@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+id: quickstart
+title: Quick Start
 ---
 
 # Quick Start
