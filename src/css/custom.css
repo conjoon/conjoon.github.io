@@ -139,3 +139,7 @@ div[class^='announcementBar_'] {
   padding-top:6px;
   font-size:12px;
 }
+
+.desktopIcon {
+  height:15px;
+}

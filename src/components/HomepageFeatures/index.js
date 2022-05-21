@@ -26,6 +26,8 @@
 import React from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
+import DesktopIcon from "@site/static/img/desktop.svg";
+
 
 const FeatureList = [
     {
@@ -45,7 +47,7 @@ const FeatureList = [
         Svg: require("@site/static/img/feather.svg").default,
         description: (
             <>
-        The client is pure JavaScript and works out of the box with a modern web browser. REST endpoints can be
+        The client is pure JavaScript and requires only a modern web browser on <DesktopIcon class="desktopIcon" title="Desktops" />. REST endpoints can be
         connected by simply configuring a base url.
             </>
         )
