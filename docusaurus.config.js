@@ -78,7 +78,7 @@ const config = {
                     position: "left",
                     label: "Docs"
                 },
-                {to: "demo/index.html", target: "_blank", label: "Demo", position: "left"},
+                {to: "demo/index.html", target: "demo", label: "Demo", position: "left"},
                 {
                     href: "https://github.com/conjoon",
                     className: "header-github-link",
@@ -139,7 +139,7 @@ const config = {
                     items: [
                         {
                             label: "Demo",
-                            target: "_blank",
+                            target: "demo",
                             href: "demo/index.html"
                         },
                         {

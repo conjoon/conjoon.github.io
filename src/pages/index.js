@@ -51,20 +51,20 @@ function HomepageHeader () {
                     <div>
                   Built with JavaScript for the web.
                     </div>
-                    <div  style={{marginTop: 60}} className={styles.buttons}>
+                    <div  style={{marginTop: 70,display:"flex",flexDirection:"row"}} className={styles.buttons}>
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs/intro">
                              Get Started ⚡️
                         </Link>
-                    </div>
-                    <div  style={{marginTop: 20}} className={styles.buttons}>
+                        <div style={{width:20}}></div>
                         <Link
                             className="button prom button--secondary button--lg"
-                            to="/demo/index.html">
+                            to="demo/index.html" target="demo">
                             Try a Demo 🎬️
                         </Link>
                     </div>
+
                 </div>
                 <div style={{position: "relative"}}  className="col right">
                     <img className="screenshot" src="./img/screens/3.png" />
