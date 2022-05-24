@@ -34,14 +34,14 @@ const services = [{
     title: "Outlook.com",
     link: "https://outlook.com",
     Svg: require("@site/static/img/logos/outlook.svg").default
-}, {
-    title: "Yahoo Mail",
-    link: "https://yahoo.com",
-    Svg: require("@site/static/img/logos/yahoomail.svg").default
 },  {
     title: "AOL",
     link: "aol.com",
     Svg: require("@site/static/img/logos/aol.svg").default
+}, {
+    title: "Yahoo Mail",
+    link: "https://yahoo.com",
+    Svg: require("@site/static/img/logos/yahoomail.svg").default
 }, {
     title: "Freenet",
     link: "https://freenet.de",
@@ -78,12 +78,13 @@ export default function Freemailer () {
             </div>
             <div className={styles.description}>
                 <p>conjoon was tested with the free email services provided
-                    by <a target="_blank" href="https://outlook.com" rel="noreferrer">Microsoft Outlook</a>
-                    , <a target="_blank" href="https://gmail.com" rel="noreferrer">Google Mail</a>
+                    by <a target="_blank" href="https://gmail.com" rel="noreferrer">Google Mail</a>
+                    , <a target="_blank" href="https://outlook.com" rel="noreferrer">Microsoft Outlook</a>
                     , <a target="_blank" href="https://aol.com" rel="noreferrer">AOL</a>
-                    , <a target="_blank" href="https://gmx.com" rel="noreferrer">GMX</a>
+                    , <a target="_blank" href="https://yahoo.com" rel="noreferrer">Yahoo</a>
                     , <a target="_blank" href="https://freent.de" rel="noreferrer">Freenet</a>
-                    , <a target="_blank" href="https://yahoo.com" rel="noreferrer">Yahoo</a> and <a href="https://web.de">web.de</a> <sup>*</sup> and
+                    , <a target="_blank" href="https://gmx.com" rel="noreferrer">GMX</a>
+                    ,  and <a href="https://web.de">web.de</a> <sup>*</sup> and
                     comes pre-configured to directly access your email account without any additional set-up required.
                 </p>
                 <sub>* conjoon is not affiliated with any of these services. All logos and trademarks are the property of their respective owners.
