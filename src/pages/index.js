@@ -31,6 +31,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import TechStack from "@site/src/components/TechStack";
+import Freemailer from "../components/Freemailer";
 
 
 function HomepageHeader () {
@@ -51,13 +52,13 @@ function HomepageHeader () {
                     <div>
                   Built with JavaScript for the web.
                     </div>
-                    <div  style={{marginTop: 70,display:"flex",flexDirection:"row"}} className={styles.buttons}>
+                    <div  style={{marginTop: 70,display: "flex",flexDirection: "row"}} className={styles.buttons}>
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs/intro">
-                             Get Started ⚡️
+                             Get Started 🚀️
                         </Link>
-                        <div style={{width:20}}></div>
+                        <div style={{width: 20}}></div>
                         <Link
                             className="button prom button--secondary button--lg"
                             to="demo/index.html" target="demo">
@@ -87,6 +88,7 @@ export default function Home () {
             <main>
                 <HomepageFeatures />
                 <TechStack />
+                <Freemailer />
             </main>
         </Layout>
     );
