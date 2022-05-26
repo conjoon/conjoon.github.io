@@ -100,8 +100,8 @@ const config = {
                     title: "Docs",
                     items: [
                         {
-                            label: "Quick Start",
-                            to: "docs/quickstart"
+                            label: "Introduction",
+                            to: "docs/introduction"
                         },
                         {
                             label: "Installation",
