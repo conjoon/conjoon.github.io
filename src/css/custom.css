@@ -30,6 +30,8 @@
  */
 
 /* You can override the default Infima variables here. */
+
+
 :root {
   --ifm-footer-background-color:#222222;
   --ifm-color-primary: #35baf6;
@@ -143,3 +145,5 @@ div[class^='announcementBar_'] {
 .desktopIcon {
   height:15px;
 }
+
+

@@ -28,6 +28,10 @@
 
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
+const allDocHomesPaths = [
+    '/docs/'
+];
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: "conjoon",
@@ -39,6 +43,22 @@ const config = {
     favicon: "img/favicon.ico",
     organizationName: "conjoon", // Usually your GitHub org/user name.
     projectName: "conjoon", // Usually your repo name.
+
+    plugins:    [[
+            'client-redirects',
+        /** @type {import('@docusaurus/plugin-client-redirects').Options} */
+        ({
+            fromExtensions: ['html'],
+            createRedirects(routePath) {
+                // Redirect to /docs from /docs/introduction, as introduction has been
+                // made the home doc
+                if (allDocHomesPaths.includes(routePath)) {
+                    return [`${routePath}/introduction`];
+                }
+                return [];
+            }
+        })]
+    ],
 
     presets: [
         [
@@ -65,6 +85,12 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+        docs: {
+            sidebar: {
+                hideable: true,
+                autoCollapseCategories: true,
+            },
+        },
         navbar: {
             title: "conjoon",
             logo: {

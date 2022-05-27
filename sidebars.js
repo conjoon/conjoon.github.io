@@ -92,7 +92,7 @@ const sidebars = {
                 }]
             }]
         },
-        "REST API"
+        "restapi"
     ]
 };
 

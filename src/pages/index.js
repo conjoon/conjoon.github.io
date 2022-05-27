@@ -44,7 +44,7 @@ function HomepageHeader () {
                         {siteConfig.title}
                     </div>
                     <p className="hero__subtitle">
-                        {siteConfig.tagline}.
+                        {siteConfig.tagline}
                     </p>
                     <div style={{marginTop: 30}}>
                   Lightweight, feature rich email client.
