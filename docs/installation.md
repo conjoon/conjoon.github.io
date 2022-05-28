@@ -1,11 +1,11 @@
 ---
 id: installation
 title: Installation
+description: Installing builds and building from scratch
 ---
 # Installation
 
-**conjoon**`s infrastructure consists of [**NPM**](https://www.npmjs.com/org/conjoon)- and [**composer**](https://packagist.org/packages/conjoon/)-packages. We also provide [**Docker/DDEV**](https://github.com/conjoon/ddev-ms-email) images
-for pre-build backends.
+**conjoon**`s infrastructure consists of [**NPM**](https://www.npmjs.com/org/conjoon)- and [**composer**](https://packagist.org/packages/conjoon/)-packages. We also provide [**Docker/DDEV**](https://github.com/conjoon/ddev-ms-email) images for pre-build [backends](backend).
 
 :::info
 This guide focuses on the installation of the web-client. For more information on the installation of one of the available backends, please refer to the [Backend Guide](./backends)
@@ -91,8 +91,7 @@ $ npm ci --save-dev
 ```
 
 ### Running the tests
-**conjoon**`s frontend is tested with [**Siesta**](http://bryntum.com/products/siesta). The test browser can be fired up 
-with
+**conjoon**`s frontend is tested with [**Siesta**](http://bryntum.com/products/siesta). The test browser can be fired up with
 ```bash
 $ npm run test
 ```
@@ -107,7 +106,7 @@ $ npm start
 ```
 
 ##### Production Build
-A deployable build will be made available in `~/build/production/conjoon`
+A deployable build will be made available in `build/production/conjoon`
 ```bash
 $ npm run build
 ```

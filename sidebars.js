@@ -38,7 +38,15 @@ const sidebars = {
             collapsed: false,
             items: [
                 "installation",
-                "configuration"
+                {
+                    type: "category",
+                    collapsed: true,
+                    label: "Configuration",
+                    link: {type: "doc", id: "configuration"},
+                    items: [
+                        "conjoon.conf.json"
+                    ]
+                }
             ]
         },
         /**
