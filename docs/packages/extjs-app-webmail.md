@@ -1,5 +1,6 @@
 ---
 id: extjs-app-webmail
+title: 📦 extjs-app-webmail
 ---
 
 [Application Package](/docs/packages/overview#application-packages) for providing the UI and client logic for a lightweight, feature-rich email client.
@@ -8,7 +9,6 @@ This package supports [rest-api-email](/docs/rest-api/rest-api-email) for IMAP/S
 
 ## Use this package, if you...
 - want to manage multiple mail accounts in a single browser instance
-- are an ISP and want to enable  webmail services for your clients 
 - are using [lumen-app-email](docs/backends/lumen-app-email)
 
 ### Requirements
@@ -25,7 +25,7 @@ When using this package without a running backend, you should use the [extjs-dev
 ## Installation
 
 :::info
-This package is automatically installed with conjoon.
+This package is automatically installed with **conjoon**.
 :::
 
 ```bash

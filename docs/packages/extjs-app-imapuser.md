@@ -1,5 +1,6 @@
 ---
 id: extjs-app-imapuser
+title: 📦 extjs-app-imapuser
 ---
  
 [Application Package](/docs/packages/overview#application-packages) for providing the UI and client logic for user authentication against a configurable endpoint. 
@@ -10,7 +11,7 @@ submitted via this package's login form.
 
 ## Use this package, if you... 
  - want to allow users to directly authenticate against an IMAP server
- - are an ISP and want to enable  webmail services for your clients based on IMAP account information
+ - are an ISP and want to provide webmail services for your clients based on IMAP account information
  - are using [lumen-app-email](docs/backends/lumen-app-email)
 
 ### Requirements
@@ -26,7 +27,7 @@ When using this package without a running backend, you should use the [extjs-dev
 ## Installation
 
 :::info
-This package is automatically installed with conjoon. 
+This package is automatically installed with **conjoon**. 
 :::
 
 ```bash

@@ -88,8 +88,8 @@ const config = {
         docs: {
             sidebar: {
                 hideable: true,
-                autoCollapseCategories: true,
-            },
+                autoCollapseCategories: false
+            }
         },
         navbar: {
             title: "conjoon",
@@ -127,7 +127,7 @@ const config = {
                     items: [
                         {
                             label: "Introduction",
-                            to: "docs/introduction"
+                            to: "docs"
                         },
                         {
                             label: "Installation",
@@ -175,7 +175,7 @@ const config = {
                     ]
                 }
             ],
-            copyright: `Copyright © 2007-${new Date().getFullYear()} Thorsten Suckow-Homberg / conjoon Open Source project. This website is proudly built with <a href="https://docusaurus.io">Docusaurus</a>.`
+            copyright: `Copyright © 2007-${new Date().getFullYear()} Thorsten Suckow-Homberg. This website is proudly built with <a href="https://docusaurus.io">Docusaurus</a>.`
         },
         prism: {
             theme: darkCodeTheme

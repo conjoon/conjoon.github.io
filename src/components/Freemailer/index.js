@@ -77,18 +77,17 @@ export default function Freemailer () {
                 ))}
             </div>
             <div className={styles.description}>
-                <p>conjoon was tested with the free email services provided
-                    by <a target="_blank" href="https://gmail.com" rel="noreferrer">Google Mail</a>
+                <p>conjoon comes pre-configured for accessing your email accounts
+                    at <a target="_blank" href="https://gmail.com" rel="noreferrer">Google Mail</a>
                     , <a target="_blank" href="https://outlook.com" rel="noreferrer">Microsoft Outlook</a>
                     , <a target="_blank" href="https://aol.com" rel="noreferrer">AOL</a>
                     , <a target="_blank" href="https://yahoo.com" rel="noreferrer">Yahoo</a>
                     , <a target="_blank" href="https://freent.de" rel="noreferrer">Freenet</a>
                     , <a target="_blank" href="https://gmx.com" rel="noreferrer">GMX</a>
-                    ,  and <a href="https://web.de">web.de</a> <sup>*</sup> and
-                    comes pre-configured to directly access your email account without any additional set-up required.
+                    ,  and <a href="https://web.de">web.de</a> <sup>*</sup> without additional setup required.
                 </p>
                 <sub>* conjoon is not affiliated with any of these services. All logos and trademarks are the property of their respective owners.
-                    If you are missing your service as a pre-configuration, let us know!
+                    <br />If your service should be listed here, let us know!
                 </sub>
             </div>
 

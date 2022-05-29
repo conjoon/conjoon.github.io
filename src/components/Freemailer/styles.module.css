@@ -80,5 +80,6 @@ sub {
   display:block;
   text-align:center;
   width:100%;
+  font-size:12px;
   margin:40px 0 24px 0;
 }

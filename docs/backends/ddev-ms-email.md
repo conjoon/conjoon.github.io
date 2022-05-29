@@ -1,16 +1,14 @@
 ---
 id: ddev-ms-email
-title: ddev-ms-email
+title: 🚪 ddev-ms-email
 ---
 
-.ddev/Docker configuration providing standalone server for [conjoon\/lumen-app-email](conjoon/lumen-app-email).
-
+.ddev/Docker configuration providing standalone server for [lumen-app-email](lumen-app-email).
 
 ## Installation
 
 #### Prerequisites
-Please make sure you have (Docker)[https://docs.docker.com/get-docker/] and (DDEV)[https://ddev.readthedocs.io/en/stable/]
-installed and running.
+Please make sure you have [Docker](https://docs.docker.com/get-docker/) and [DDEV](https://ddev.readthedocs.io/en/stable/) installed and running.
 
 ### Starting DDEV
 
@@ -35,10 +33,8 @@ $ ddev ssh
 ```
 
 ## Configuration
-DDEV-configuration can be found in [./ddev/config.yaml](./ddev/config.yaml). 
-Adjust to your needs.
+DDEV-configuration can be found in `./ddev/config.yaml`. Adjust to your needs.
 
 
 ## Additional resources 
-Please refer to the documentation of [conjoon\/lumen-app-email](conjoon/lumen-app-email)
-for additional information on how to configure your instance of **lumen-app-email**.
+Please refer to the documentation of [lumen-app-email](./lumen-app-email) for additional information on configuration options.

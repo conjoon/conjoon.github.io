@@ -55,7 +55,7 @@ function HomepageHeader () {
                     <div  style={{marginTop: 70,display: "flex",flexDirection: "row"}} className={styles.buttons}>
                         <Link
                             className="button button--secondary button--lg"
-                            to="/docs/intro">
+                            to="/docs">
                              Get Started 🚀️
                         </Link>
                         <div style={{width: 20}}></div>

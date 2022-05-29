@@ -1,20 +1,19 @@
 ---
 id: extjs-theme-material
+title: 🎨 extjs-theme-material
 ---
 
-:::info
-conjoon comes preconfigured with this Theme!
-:::
+[Theme](/docs/themes/overview) containing the material theme for **conjoon**.
 
-This Sencha ExtJS NPM package contains the material theme for development of [conjoon](https://github.com/conjoon) along
-with its application packages.
-<br />
-This theme serves as a base for pluggable packages, such as [conjoon/extjs-app-webmail](https://github.com/conjoon/extjs-app-webmail).
-Styling information for external packages must be self-contained and managed by the packages.
-<br />
-This theme extends the Material-Theme of Ext JS. Ext JS > 7.0 is required for this package. 
+## Use this theme, if you...
+- are looking for a modern material theme with exposed css variables and light- / dark-mode options. 
 
 ## Installation
+
+:::info
+This theme is automatically installed with **conjoon**.
+:::
+
 ```bash
 $ npm i @conjoon/extjs-theme-material
 ```
@@ -28,42 +27,68 @@ Testing environment will then be available via
 $ npm test
 ```
 
-For using the package as a theme:
-<br />
-In your `app.json`, add this package as a requirement, and make sure your Ext JS `workspace.json`
-is properly configured to look up local repositories in the `node_modules`-directory.
+### Configuring Sencha Ext JS
+Make sure your ExtJS `workspace.json` is properly configured to look up local repositories in the `node_modules`-directory.
 
-Example (`workspace.json`) :
-```json 
+```json title=workspace.json
 {
   "packages": {
-    "dir": "${workspace.dir}/node_modules/@l8js,${workspace.dir}/node_modules/@conjoon,${workspace.dir}/node_modules/@coon-js,${workspace.dir}/packages/local,${workspace.dir}/packages,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name},${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-treegrid,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-base,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-ios,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-material,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-aria,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-neutral,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-classic,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-gray,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-crisp,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-crisp-touch,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-neptune,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-neptune-touch,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-triton,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-graphite,${workspace.dir}/node_modules/@sencha/ext-${toolkit.name}-theme-material,${workspace.dir}/node_modules/@sencha/ext-calendar,${workspace.dir}/node_modules/@sencha/ext-charts,${workspace.dir}/node_modules/@sencha/ext-d3,${workspace.dir}/node_modules/@sencha/ext-exporter,${workspace.dir}/node_modules/@sencha/ext-pivot,${workspace.dir}/node_modules/@sencha/ext-pivot-d3,${workspace.dir}/node_modules/@sencha/ext-ux,${workspace.dir}/node_modules/@sencha/ext-font-ios",
+    "dir": "${workspace.dir}/node_modules/@l8js,${workspace.dir}/node_modules/@conjoon,...",
     "extract": "${workspace.dir}/packages/remote"
   }
 }
 ```
 
-## Configuration and Usage
-For more information on how to configure and use the package, refer to the [documentation](./docs/README.md).
+Configure `app.json` to make sure the theme is used:
+
+```json title= app.json
+{
+    "builds": {
+        "desktop": {
+            "toolkit": "classic",
+            "theme": "extjs-theme-material",
+            "sass": ...
+        }
+    }
+}
+```
+
+:::info Auto-registering as a Theme
+This theme automatically registers itself by setting the following global properties:
+```javascript
+Ext.theme.is["coon-js-theme"] = true;
+Ext.theme.name = "extjs-theme-material";
+```
+This is to identify itself later on for proper inclusion in the used environment.
+
+There is a override in the `init.js`-file defined that makes sure that the class is made available to applications.
+:::
 
 
-## Tests
-Tests are written with [Siesta](https://bryntum.com/siesta). Documentation can be found [here](./tests/README.md).
+## Configuration
 
+**extjs-theme-material** is a **coon.js** package and is tagged as such in the `package.json`:
 
-## Configuration options
+```json
+{
+  "coon-js": {
+    "package": {
+      "config" : "${package.resourcePath}/extjs-theme-material.conf.json"
+    }
+  }
+}
+```
 
-The following options can be configured to change colors of the application the theme is used in:
+By default, this package's configuration can be found in this package's `resources` folder in a file named `extjs-theme-material.conf.json`.
 
-- `modes.dark.name` - The display name of the `dark` theme mode.
-- `modes.dark.default` - If the theme mode should be used as default.
-- `modes.dark.config` - CSS Variables configuration. The variables have to be already existing in the theme itself.
-  <br /><br />
-- `modes.light.name` - The display name of the `light` theme mode.
-- `modes.light.default` - If the theme mode should be used as default.
-- `modes.light.config` - CSS Variables configuration. The variables have to be already existing in the theme itself.
+### What goes into an `extjs-theme-material` configuration?
 
-_Example:_
+:::tip conjoon.conf.json
+The following can be applied directly to `conjoon.conf.json`. Refer to the [configuration guide](/docs/configuration#package-configurations)!
+:::
+
+The following options can be configured to change the appearance of **conjoon**:
+
 ```json
 {
     "modes": {
@@ -97,22 +122,43 @@ _Example:_
     }
 }
 ```
+:::note
+The following uses dot-notation for the field-names!
+:::
 
-## Usage
-Specified as `theme` property in conjoon's `app.json`.
-Additionally, packages providing styling information might refer to this theme
-to access various variable definitions.
+#### `modes.dark.name`
+ - Type: `String` 
 
-## Note
-### Registering as a coon.js-Theme
-This theme automatically registers itself by setting the following global properties:
-```javascript
-Ext.theme.is["coon-js-theme"] = true;
-Ext.theme.name = "extjs-theme-material";
-```
-This is to identify itself later on for proper inclusion in the coon.js-environment.
+The display name of the `dark` theme mode.
 
-### Loading Source Files
-Although the package is registered as a static-theme package, sources such as the `conjoon.theme.material.Theme`
-cannot be required in a production build if not specified explicitly. There is a dummy-override in the `init.js`-file
-defined that makes sure that the class is made available to applications.
+#### `modes.dark.default` 
+ - Type: `Bool`
+
+If the dark mode should be used as default.
+
+#### `modes.dark.config`
+ - Type: `Object` 
+CSS Variables configuration.
+
+:::caution
+Variables edited here need to be existing in the theme's SASS-files.
+:::
+
+#### `modes.light.name`
+- Type: `String`
+
+The display name of the `light` theme mode.
+
+#### `modes.light.default`
+- Type: `Bool`
+
+If the light mode should be used as default.
+
+#### `modes.light.config`
+- Type: `Object`
+  
+CSS Variables configuration.
+
+:::caution
+Variables edited here need to be existing in the theme's SASS-files.
+:::
