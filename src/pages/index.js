@@ -64,13 +64,22 @@ function HomepageHeader () {
                             to="demo/index.html" target="demo">
                             Try a Demo 🎬️
                         </Link>
-                    </div>
 
+                    </div>
+                    
                 </div>
                 <div style={{position: "relative"}}  className="col right">
                     <img className="screenshot" src="./img/screens/3.png" />
-                    <div style={{textAlign: "right",marginTop: 4,fontSize: 10}}>
-                  Handcrafted with ☕ &amp; ❤
+                    <div style={{display: "flex", justifyContent: "end", "alignItems": "center",marginTop: 4,fontSize: 10}}>
+                        Handcrafted with ☕ &amp; ❤
+                        <span style={{margin:"0 0 0 20px"}}>
+                            <iframe
+                                src="https://ghbtns.com/github-btn.html?user=conjoon&amp;repo=conjoon&amp;type=star&amp;count=false&amp;"
+                                width={60}
+                                height={20}
+                                title="GitHub Stars"
+                            />
+                        </span>
                     </div>
                 </div>
             </div>
