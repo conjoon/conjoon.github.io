@@ -1,6 +1,5 @@
 ---
 id: conjoon.conf.json
-The configuration file for **conjoon** is available at the following path in a build:
 ---
 
 # `conjoon.conf.json`
@@ -105,7 +104,7 @@ An object containing a `message`:`String` and a `type`:`info|alert|warning|succe
 An object containing all the packages that should be used with **conjoon**. If no package configuration is available here, but the package gets loaded nonetheless, the configuration available with the package will be used. 
 
 :::tip
-For package specific configurations of packages available wiht the base installation of **conjoon**, please refer to the [Frontend Guide](frontend).
+For package specific configurations of packages available with the base installation of **conjoon**, please refer to the [Packages Guide](packages).
 :::
 
 There are a two relevant fields that are used with each package configuration: `autoLoad` and `config`. Let's have a look at an example for the package named `package-calendar` that gets configured with `conjoon.conf.json`:

@@ -4,7 +4,7 @@ title: Introduction
 slug: /
 ---
 
-# Introduction
+# Introduction ☀
 
 ⚡ **conjoon** is an **open source JavaScript email client**.
 
@@ -48,12 +48,12 @@ IMAP / SMTP protocol implementations for **all relevant** email operations
 
 **Tested** with the most **popular free email services**
 
-## Staying informed
+## Staying informed 📰
 
 - [GitHub](https://github.com/conjoon/conjoon)
 - [Twitter](https://twitter.com/conjoon)
 
-## Something missing?
+## Something missing? 🔍
 If you find an issue with the documentation or **conjoon** in general, or if you need to ask a question or have a great idea for a
 new feature, please let us know! You can use all the community tools available over at our [GitHub Page](https://github.com/conjoon/conjoon), or file a [**ticket**](https://github.com/conjoon/conjoon) directly.
 

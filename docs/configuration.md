@@ -5,7 +5,7 @@ description: Configuring an installation of conjoon and its frontend packages
 ---
 
 :::info
-This guide focuses on the configuration of the web-client of **conjoon**. For more information on the configuration of one of the available backends, please refer to the [Backend Guide](./backends)
+This guide focuses on the configuration of the web-client of **conjoon**. For more information on the configuration of one of the available backends, please refer to the [Backend Guide](backends/overview)
 :::
 
 **conjoon** is a set of packages that need to get activated with the main application in order to work. This guide shows how to use the central configuration file for the whole application, and how to adjust package-specific settings.
