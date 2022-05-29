@@ -87,7 +87,7 @@ export default function Freemailer () {
                     ,  and <a href="https://web.de">web.de</a> <sup>*</sup> without additional setup required.
                 </p>
                 <sub>* conjoon is not affiliated with any of these services. All logos and trademarks are the property of their respective owners.
-                    <br />If your service should be listed here, let us know!
+                    <br />If you'd like to see your service listed here, let us know!
                 </sub>
             </div>
 
