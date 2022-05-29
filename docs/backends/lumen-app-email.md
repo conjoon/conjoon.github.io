@@ -46,17 +46,6 @@ Authorization: Basic Y29uam9vbjpIZWxsb1dvcmxk
 Host: hostname
 ````
 
-<details>
-<summary>Composer 2.0 - Pear/Horde vows</summary>
-As of **v1.0.1**, **[php-lib-conjoon](https://github.com/conjoon/php-lib-conjoon)** no longer requires _Composer 1.*_ for installation. For _Composer 2.*_-compatibility, **[php-lib-conjoon](https://github.com/conjoon/php-lib-conjoon)** relies on the following private composer package repository:
-```
-https://horde-satis.maintaina.com
-```
-This repository is mentioned in **THIS** package's _composer.json_.
-
-This repository is also mentioned in the _composer.json_-file of [horde/horde_deployment](https://github.com/horde/horde-deployment/blob/master/composer.json).
-</details>
-
 ## Installation
 
 ### Using GIT & composer
@@ -81,9 +70,9 @@ Settings may be adjusted on your own to match your desired configuration for the
 ### Configuring CORS
 **lumen-app-email** uses [fruitcake/laravel-cors](https://github.com/fruitcake/laravel-cors) for enabling
 [Cross-Origin Resource Sharing](http://enable-cors.org/).
-<br />
+
 A configuration template can be found in `app/config/cors.php.example`.
-<br />
+
 Copy this file to `app/config/cors.php`, and adjust the settings to your needs. The example configuration works well with development environments, but you might want to add more strict options for production, auch as the settings for `allowed_origins` and `paths`.
 
 
@@ -142,7 +131,7 @@ Copy this file to `imapserver.php` and specify an array of mail server configura
 
 #### Example for `match`
 **Prerequisite:** `match` is set to `["/\@(googlemail.)(com)$/mi"]`
-<br />
+
 A client authenticates with the username "name@**googlemail.com**". `lumen-app-email` will query through the configurations of `imapserver.php` and test **this** username against regular expression defined in `match`. In this example, the above regular expression matches the username (i.e. email address). The configuration where the regular expression is specified will be used for subsequent operations requested by the client.
 
 #### Example for `root`
