@@ -203,6 +203,13 @@ An array containing an arbitrary number of entries to be passed to the construct
 
 An object specifying the fields `application` and/or `components`, providing information about the used `Application` and `ComponentPlugins` with an installation of **conjoon**. 
 
+:::info Pre-installed Plugins
+**conjoon** comes pre-installed with the following plugins 
+- [app-internal-titlechange](/docs/plugins/app-internal-titlechange) 
+- [app-internal-desktopquotes](/docs/plugins/app-internal-desktopquotes) 
+- [extjs-plug-themeutil](/docs/plugins/extjs-plug-themeutil) 
+:::
+
 #### `application` {#plugins-application}
  - Type: `Array`
 
