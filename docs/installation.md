@@ -5,7 +5,7 @@ description: Installing builds and building from scratch
 ---
 # Installation
 
-**conjoon**`s infrastructure consists of [**NPM**](https://www.npmjs.com/org/conjoon)- and [**composer**](https://packagist.org/packages/conjoon/)-packages. We also provide [**Docker/DDEV**](https://github.com/conjoon/ddev-ms-email) images for pre-build [backends](backends/overview).
+**conjoon**`s infrastructure consists of [**NPM**](/docs/packages/overview)- and [**composer**](https://packagist.org/packages/conjoon/)-packages. We also provide [**Docker/DDEV**](/docs/backends/ddev-ms-email) images for pre-build [backends](/docs/backends/overview).
 
 :::info
 This guide focuses on the installation of the web-client. For more information on the installation of one of the available backends, please refer to the [Backend Guide](backends/overview)
