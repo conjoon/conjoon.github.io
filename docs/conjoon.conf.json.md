@@ -46,7 +46,7 @@ Application specific configuration. Will be used for overall appearance of the f
 
 - Type: `String`
 
-The title for your installation of conjoon. Used as the `title` for the browser instance and at various other places throughout the application. See also [`titleTpl`](#application-titleTpl).
+The title for your installation of **conjoon**. Used as the `title` for the browser instance and at various other places throughout the application. See also [`titleTpl`](#application-titleTpl).
 
 ```json title="conjoon.conf.json"
  {

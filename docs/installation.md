@@ -98,7 +98,7 @@ $ npm run test
 
 ## Available Build Scripts
 Once all dependencies were installed with the help of **NPM**, you can run various scripts that help you with the
-development of conjoon.
+development of **conjoon**.
 
 ##### Development Build w/ integrated webserver and mocked backend
 ```bash

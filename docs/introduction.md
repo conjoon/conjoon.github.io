@@ -30,7 +30,7 @@ npm start
 ```
 
 :::tip 
-You have just installed the latest build available for conjoon.
+You have just installed the latest build available for **conjoon**.
 For instructions on how to build the project from scratch, check out the [**installation guide**](./installation). 
 :::
 
