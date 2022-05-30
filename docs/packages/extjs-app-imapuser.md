@@ -57,7 +57,7 @@ Make sure your ExtJS `workspace.json` is properly configured to look up local re
 ```
 
 Update the `app.json` of the application by specifying this package in the `uses`-property in
-either the `development` and/or `prodution` section:
+either the `development` and/or `production` section:
 
 
 ```json title=app.json

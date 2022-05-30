@@ -55,7 +55,7 @@ Make sure your ExtJS `workspace.json` is properly configured to look up local re
 ```
 
 Update the `app.json` of the application by specifying this package in the `uses`-property in
-either the `development` and/or `prodution` section:
+either the `development` and/or `production` section:
 
 
 ```json title=app.json
@@ -187,12 +187,15 @@ An html-template to use with the message reader.
 
 Endpoint configuration for this package. Used to create required URLs for outgoing HTTP-requests. Provides the field `rest-api-email.base` that must contain the base URL where endpoints for email operations as described in [rest-api-mail](/docs/rest-api/rest-api-email) can be found.
 
-### Plugins
-This package comes pre-configured with the following plugins:
+#### `plugins` 
+Section for specifying [component](/docs/plugins#component-plugins) and [controller](/docs/plugins#controller-plugins) plugins.
 
-#### `conjoon.cn_mail.view.mail.message.grid.feature.PreviewTextLazyLoad` 
-A plugin for lazy loading email message preview texts in the grid, making sure that envelope information of available messages are loaded and rendered first.
+This package comes pre-configured with the following component plugins:
 
-#### `conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin` 
-A plugin for automatically querying mailboxes for new messages. Plays notification sounds when new messages have been received. If allowed by the user, desktop notifications are shown for new messages, too. The default interval for looking up new messages is set to 240000 ms. [Sounds](#newEmail-sound) and [images](#newEmail-image) can be configured to be used with this plugin.
+ - `conjoon.cn_mail.view.mail.message.grid.feature.PreviewTextLazyLoad`<br />A plugin for lazy loading email message preview texts in the grid, making sure that envelope information of available messages are loaded and rendered first. You can find more about it [here](/docs/plugins/mail-internal-previewtext).
+
+
+This package comes pre-configured with the following controller plugins:
+
+ -  `conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin`<br />A plugin for automatically querying mailboxes for new messages. Plays notification sounds when new messages have been received. If allowed by the user, desktop notifications are shown for new messages, too. The default interval for looking up new messages is set to 240000 ms. [Sounds](#newEmail-sound) and [images](#newEmail-image) can be configured to be used with this plugin. You can find more about it [here](/docs/plugins/mail-internal-newmessages).
 

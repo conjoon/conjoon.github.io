@@ -64,7 +64,27 @@ const sidebars = {
                 "packages/extjs-app-imapuser",
                 "packages/extjs-app-webmail",
                 "packages/extjs-dev-imapusersim",
-                "packages/extjs-dev-webmailsim"
+                "packages/extjs-dev-webmailsim",
+                "packages/extjs-ctrl-simmanager"
+            ]
+        },
+        /**
+         * +---------------------------
+         * |       Plugins
+         * +---------------------------
+         */
+        {
+            type: "category",
+            label: "Plugins",
+            collapsed: true,
+            link: {type: "doc", id: "plugins/overview"},
+            items: [
+                "plugins/extjs-plug-themeutil",
+                "plugins/app-internal-titlechange",
+                "plugins/app-internal-desktopquotes",
+                "plugins/mail-internal-previewtext",
+                "plugins/mail-internal-newmessages",
+                "plugins/theme-internal-modeswitch"
             ]
         },
         /**

@@ -203,7 +203,7 @@ An array containing an arbitrary number of entries to be passed to the construct
 
 An object specifying the fields `application` and/or `components`, providing information about the used `Application` and `ComponentPlugins` with an installation of **conjoon**. 
 
-#### `application`
+#### `application` {#plugins-application}
  - Type: `Array`
 
 An array containing an arbitrary number of strings. An entry can be
@@ -224,7 +224,7 @@ The first entry is the name of a package. The package has the namespace `coon.pl
 
 The second entry is already a fqn, so no resolving is necessary, the class name will be used as is.
 
-#### `components`
+#### `components` {#plugins-components}
 
  - Type: `Array`
 

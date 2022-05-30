@@ -8,11 +8,11 @@ slug: /
 
 ⚡ **conjoon** is an **open source JavaScript email client**.
 
-💅 It provides **clear separation** between the frontend and backend.
+💅 Its architecture provides a **clear separation** of the frontend and backend
 
 🍋 It is **easy to install** and configure.
 
-👨‍🏫 Its **well documented API** makes it **easy to extend** and adopt functionality.
+👨‍🏫 Its **well documented APIs** makes it **easy to extend** and adopt functionality.
 
 ## Quick Start ⏱ {#quick-start}
 
