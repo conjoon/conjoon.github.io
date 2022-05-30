@@ -44,7 +44,7 @@ The Backend is an **easy to install** [Lumen/Laravel](https://lumen.laravel.com/
 
 IMAP / SMTP protocol implementations for **all relevant** email operations
 
-[REST API documentation](restapi) available as OpenAPI documentation
+[REST API documentation](/docs/rest-api/overview) available as OpenAPI documentation
 
 **Tested** with the most **popular free email services**
 
