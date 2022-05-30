@@ -206,8 +206,9 @@ An object specifying the fields `application` and/or `components`, providing inf
 :::info Pre-installed Plugins
 **conjoon** comes pre-installed with the following plugins 
 - [app-internal-titlechange](/docs/plugins/app-internal-titlechange) 
-- [app-internal-desktopquotes](/docs/plugins/app-internal-desktopquotes) 
-- [extjs-plug-themeutil](/docs/plugins/extjs-plug-themeutil) 
+- [app-internal-desktopquotes](/docs/plugins/app-internal-desktopquotes)
+- [theme-internal-modeswitch](/docs/plugins/theme-internal-modeswitch)
+- [extjs-plug-themeutil](/docs/plugins/extjs-plug-themeutil)
 :::
 
 #### `application` {#plugins-application}

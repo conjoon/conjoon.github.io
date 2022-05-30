@@ -164,4 +164,4 @@ Variables edited here need to be existing in the theme's SASS-files.
 :::
 
 ## Plugins
-**extjs-theme-material** installs [theme-internal-modeswitch](/docs/plugins/theme-internal-modeswitch).
+**extjs-theme-material** provides [theme-internal-modeswitch](/docs/plugins/theme-internal-modeswitch).

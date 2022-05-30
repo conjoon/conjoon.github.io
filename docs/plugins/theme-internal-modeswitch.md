@@ -15,7 +15,7 @@ This is an internal plugin defined by **[extjs-theme-material](/docs/themes/extj
 ## Installation
 
 :::info
-This plugin is automatically installed with **[extjs-theme-material](/docs/themes/extjs-theme-material)** and _enabled_ by default.
+This plugin is automatically installed with **conjoon** and _enabled_ by default.
 :::
 
 
