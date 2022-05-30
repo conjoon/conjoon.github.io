@@ -55,7 +55,7 @@ IMAP / SMTP protocol implementations for **all relevant** email operations
 
 ## Something missing? 🔍
 If you find an issue with the documentation or **conjoon** in general, or if you need to ask a question or have a great idea for a
-new feature, please let us know! You can use all the community tools available over at our [GitHub Page](https://github.com/conjoon/conjoon), or file a [**ticket**](https://github.com/conjoon/conjoon) directly.
+new feature, please let us know! You can use all the community tools available over at our [GitHub Page](https://github.com/conjoon/conjoon), or file a [ticket](https://github.com/conjoon/conjoon) directly.
 
 We'll also happily connect with you over Twitter - just send a tweet mentioning the [@conjoon](https://twitter.com/conjoon) Twitter account.
 
