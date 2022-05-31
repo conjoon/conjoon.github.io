@@ -125,7 +125,13 @@ const sidebars = {
             collapsed: true,
             link: {type: "doc", id: "rest-api/overview"},
             items: ["rest-api/rest-api-email"]
-        }
+        },
+        /**
+         * +------------------------------
+         * |       Troubleshooting & FAQ
+         * +------------------------------
+         */
+        "troubleshooting"
     ]
 };
 
