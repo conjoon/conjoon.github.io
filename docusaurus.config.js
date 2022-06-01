@@ -95,7 +95,7 @@ const config = {
             title: "conjoon",
             logo: {
                 alt: "conjoon",
-                src: "img/logos/conjoon.svg"
+                src: "img/logos/conjoon.png"
             },
             items: [
                 {
