@@ -30,6 +30,10 @@ cd <target_folder>
 npm run stage
 ```
 
+Your site starts at `http://localhost:9001` with a production build of **conjoon**.
+
+Open `build/production/conjoon/desktop/resources/coon-js/conjoon.conf.json` and edit the packages' endpoints if you have a [backend](/docs/backends/overview) available. 
+
 :::tip 
 You have just installed the latest build available for **conjoon**.
 For instructions on how to build the project from scratch, check out the [**installation guide**](./installation). 
