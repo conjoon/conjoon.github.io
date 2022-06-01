@@ -188,7 +188,7 @@ An html-template to use with the message reader.
 Endpoint configuration for this package. Used to create required URLs for outgoing HTTP-requests. Provides the field `rest-api-email.base` that must contain the base URL where endpoints for email operations as described in [rest-api-mail](/docs/rest-api/rest-api-email) can be found.
 
 #### `plugins` 
-Section for specifying [component](/docs/plugins#component-plugins) and [controller](/docs/plugins#controller-plugins) plugins.
+Section for specifying [component](/docs/plugins/overview#component-plugins) and [controller](/docs/plugins/overview#controller-plugins) plugins.
 
 This package comes pre-configured with the following component plugins:
 

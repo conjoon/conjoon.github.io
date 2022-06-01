@@ -25,7 +25,7 @@ Plugins registered with the application.
 Plugins registered for view components.
 
 - [@conjoon/conjoon#**app-internal-desktopquotes**](./app-internal-desktopquotes) 🥷
-- [@conjoon/extjs-theme-material#**material-internal-modeswitch**](./material-internal-modeswitch) 🥷
+- [@conjoon/extjs-theme-material#**material-internal-modeswitch**](./theme-internal-modeswitch) 🥷
 - [@conjoon/extjs-app-webmail#**mail-internal-previewtext**](./mail-internal-previewtext) 🥷
 
 ## Controller Plugins {#controller-plugins}
