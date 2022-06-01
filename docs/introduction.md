@@ -19,14 +19,15 @@ slug: /
 Install [Node.js](https://nodejs.org/en/download) and create a new **conjoon** site:
 
 ```bash
-npx create-conjoon@latest target-folder
+npx create-conjoon@latest
 ```
 
-Start the embedded webserver
+Follow the instructions on screen.
+
 
 ```bash
-cd target-folder
-npm start
+cd <target_folder>
+npm run stage
 ```
 
 :::tip 
