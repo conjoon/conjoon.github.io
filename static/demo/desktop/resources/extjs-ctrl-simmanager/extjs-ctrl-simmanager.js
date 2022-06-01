@@ -1,1 +1,0 @@
-Ext.define('coon.simmanager.app.PackageController',{extend:'coon.core.app.PackageController',requires:['Ext.ux.ajax.SimManager'],init:function(a){Ext.ux.ajax.SimManager.defaultSimlet=null}});
