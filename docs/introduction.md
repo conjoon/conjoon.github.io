@@ -19,14 +19,14 @@ slug: /
 Install [Node.js](https://nodejs.org/en/download) and create a new **conjoon** site:
 
 ```bash
-npx create-conjoon@latest
+npx create-conjoon@latest target_folder
 ```
 
 Follow the instructions on screen.
 
 
 ```bash
-cd <target_folder>
+cd target_folder
 npm run stage
 ```
 
