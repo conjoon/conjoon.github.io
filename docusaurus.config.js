@@ -41,6 +41,9 @@ const config = {
     onBrokenLinks: "throw",
     onBrokenMarkdownLinks: "warn",
     favicon: "img/favicon.ico",
+    customFields: {
+        description: "An open source email client built with JavaScript for the web. Handcrafted with ☕ & ❤"
+    },
     organizationName: "conjoon", // Usually your GitHub org/user name.
     projectName: "conjoon", // Usually your repo name.
 

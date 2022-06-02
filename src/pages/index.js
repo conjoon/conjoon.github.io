@@ -52,13 +52,13 @@ function HomepageHeader () {
                     <div>
                   Built with JavaScript for the web.
                     </div>
-                    <div  style={{marginTop: 70,display: "flex",flexDirection: "row", justifyContent: "end"}} className={styles.buttons}>
+                    <div className={styles.buttons}>
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs">
                              Get Started 🚀️
                         </Link>
-                        <div style={{width: 20}}></div>
+                        <div className={styles.separator}></div>
                         <Link
                             className="button prom button--secondary button--lg"
                             to="demo/index.html" target="demo">
@@ -92,7 +92,7 @@ export default function Home () {
     return (
         <Layout
             title={`${siteConfig.tagline}`}
-            description="Description will go into a meta tag in <head />">
+            description="An open source email client built with JavaScript for the web. Handcrafted with ☕ & ❤">
             <HomepageHeader />
             <main>
                 <HomepageFeatures />
