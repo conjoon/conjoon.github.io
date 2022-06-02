@@ -1,0 +1,24 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "conjoon Blog",
+    "home_page_url": "https://conjoon.org/blog",
+    "description": "conjoon Blog",
+    "items": [
+        {
+            "id": "/2022/06/01/pre-release",
+            "content_html": "<p align=\"center\"><img loading=\"lazy\" src=\"img/conjoon_large.png\" width=\"200\" class=\"img_E7b_\"></p><p>5 years after the (almost) <a href=\"https://github.com/conjoon/conjoon/commit/ca075e548a644011e0d9fbaa3321bcff7aa8f998\" target=\"_blank\" rel=\"noopener noreferrer\">first commit</a> to <strong>conjoon</strong>'s <a href=\"https://github.com/conjoon/conjoon\" target=\"_blank\" rel=\"noopener noreferrer\">new home</a>, we're happy to announce the immediate availability of the first public pre-release of <strong>conjoon</strong>, an open source email client built with JavaScript, PHP and great tools from the <strong>open source</strong> community.</p><p>Type</p><div class=\"language-bash codeBlockContainer_MPoW theme-code-block\" style=\"--prism-color:#F8F8F2;--prism-background-color:#282A36\"><div class=\"codeBlockContent_B9tL\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock__0OG thin-scrollbar\"><code class=\"codeBlockLines_gEuF\"><span class=\"token-line\" style=\"color:#F8F8F2\"><span class=\"token plain\">npx create-conjoon@latest </span><br></span></code></pre><div class=\"buttonGroup_hRr1\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_W9eQ\" aria-hidden=\"true\"><svg class=\"copyButtonIcon_XEyF\" viewBox=\"0 0 24 24\"><path d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg class=\"copyButtonSuccessIcon_i9w9\" viewBox=\"0 0 24 24\"><path d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div><p>then </p><div class=\"language-bash codeBlockContainer_MPoW theme-code-block\" style=\"--prism-color:#F8F8F2;--prism-background-color:#282A36\"><div class=\"codeBlockContent_B9tL\"><pre tabindex=\"0\" class=\"prism-code language-bash codeBlock__0OG thin-scrollbar\"><code class=\"codeBlockLines_gEuF\"><span class=\"token-line\" style=\"color:#F8F8F2\"><span class=\"token builtin class-name\" style=\"color:rgb(189, 147, 249)\">cd</span><span class=\"token plain\"> target_folder</span><br></span><span class=\"token-line\" style=\"color:#F8F8F2\"><span class=\"token plain\"></span><span class=\"token function\" style=\"color:rgb(80, 250, 123)\">npm</span><span class=\"token plain\"> run stage </span><br></span></code></pre><div class=\"buttonGroup_hRr1\"><button type=\"button\" aria-label=\"Copy code to clipboard\" title=\"Copy\" class=\"clean-btn\"><span class=\"copyButtonIcons_W9eQ\" aria-hidden=\"true\"><svg class=\"copyButtonIcon_XEyF\" viewBox=\"0 0 24 24\"><path d=\"M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z\"></path></svg><svg class=\"copyButtonSuccessIcon_i9w9\" viewBox=\"0 0 24 24\"><path d=\"M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z\"></path></svg></span></button></div></div></div><p>to get started, and don't miss out on the <a href=\"/docs\">documentation</a>.</p><p>While we're confident that <strong>conjoon</strong> can take its first steps in a production environment, expect a stable first release to be available in the coming days. Until then, a few additions to the documentation and the <a href=\"/docs/category/guides\">guides</a> will be made.</p><p><strong>Happy coding! 🎈 </strong></p>",
+            "url": "https://conjoon.org/blog/2022/06/01/pre-release",
+            "title": "Releasing conjoon 1.0.0-beta.0",
+            "summary": "5 years after the (almost) first commit to conjoon's new home, we're happy to announce the immediate availability of the first public pre-release of conjoon, an open source email client built with JavaScript, PHP and great tools from the open source community.",
+            "date_modified": "2022-06-01T00:00:00.000Z",
+            "author": {
+                "name": "Thorsten Suckow-Homberg",
+                "url": "http://twitter.com/ThorstenSuckow"
+            },
+            "tags": [
+                "release",
+                "birth"
+            ]
+        }
+    ]
+}
