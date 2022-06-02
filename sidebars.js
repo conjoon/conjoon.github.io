@@ -27,29 +27,8 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-    docs: [
-        "introduction",
-        {
-            type: "category",
-            label: "Getting Started",
-            link: {
-                type: "generated-index",
-                description: "Learn about installing, building and deploying conjoon, and how to configure the frontend to your like."
-            },
-            collapsed: true,
-            items: [
-                "installation",
-                {
-                    type: "category",
-                    collapsed: true,
-                    label: "Configuration",
-                    link: {type: "doc", id: "configuration"},
-                    items: [
-                        "conjoon.conf.json"
-                    ]
-                }
-            ]
-        },
+    api: [
+        "conjoon.conf.json",
         /**
          * +---------------------------
          * |       Packages
@@ -125,6 +104,36 @@ const sidebars = {
             collapsed: true,
             link: {type: "doc", id: "rest-api/overview"},
             items: ["rest-api/rest-api-email"]
+        }
+
+    ],
+    docs: [
+        "introduction",
+        {
+            type: "category",
+            label: "Getting Started",
+            link: {
+                type: "generated-index",
+                description: "Learn about installing, building and deploying conjoon, and how to configure the frontend to your like."
+            },
+            collapsed: true,
+            items: [
+                "installation",
+                "configuration"
+            ]
+        },
+        {
+            type: "category",
+            label: "Guides",
+            link: {
+                type: "generated-index",
+                description: "Learn about the most important concepts of conjoon"
+            },
+            collapsed: true,
+            items: [
+                "guides/configurationdetails",
+                "guides/servicelocator"
+            ]
         },
         /**
          * +------------------------------

@@ -77,8 +77,23 @@ const config = {
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css")
-                }
-            })
+                },
+                blog: {
+                    // routeBasePath: '/',
+                    path: 'blog',
+                    editUrl: ({locale, blogDirPath, blogPath}) => {
+                        return `https://github.com/conjoon/conjoon.github.io/edit/main/${blogDirPath}/${blogPath}`;
+                    },
+                    postsPerPage: 5,
+                    feedOptions: {
+                        type: 'all',
+                        copyright: `Copyright © ${new Date().getFullYear()} conjoon Open Source Project`,
+                    },
+                    blogSidebarCount: 'ALL',
+                    blogSidebarTitle: 'All our posts',
+                },
+            }),
+
         ]
     ],
 
@@ -104,6 +119,14 @@ const config = {
                     position: "left",
                     label: "Docs"
                 },
+                {
+                    type: "docSidebar",
+                    sidebarId: "api",
+                    position: "left",
+                    label: "API"
+
+                },
+                {to: 'blog', label: 'Blog', position: 'left'},
                 {to: "demo/index.html", target: "demo", label: "Demo", position: "left"},
                 {
                     href: "https://github.com/conjoon",
