@@ -52,7 +52,7 @@ function HomepageHeader () {
                     <div>
                   Built with JavaScript for the web.
                     </div>
-                    <div  style={{marginTop: 70,display: "flex",flexDirection: "row"}} className={styles.buttons}>
+                    <div  style={{marginTop: 70,display: "flex",flexDirection: "row", justifyContent: "end"}} className={styles.buttons}>
                         <Link
                             className="button button--secondary button--lg"
                             to="/docs">
