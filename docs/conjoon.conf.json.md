@@ -284,5 +284,5 @@ An array of arguments that get passed to the constructor of the plugin
 ## Further Reading
 
 :::info
-An in-depth look at the internals of **conjoon*'s configuration system can be found [here](https://medium.com/@thorstensuckow/creating-ext-js-applications-with-coon-js-part-3-configuration-details-and-defining-plugins-a9e8e99b280a).
+An in-depth look at the internals of **conjoon*'s configuration system can be found [here](/docs/guides/configurationdetails).
 :::

@@ -104,6 +104,13 @@ const config = {
                     position: "left",
                     label: "Docs"
                 },
+                {
+                    type: "docSidebar",
+                    sidebarId: "api",
+                    position: "left",
+                    label: "API"
+
+                },
                 {to: "demo/index.html", target: "demo", label: "Demo", position: "left"},
                 {
                     href: "https://github.com/conjoon",

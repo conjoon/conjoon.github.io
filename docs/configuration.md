@@ -43,7 +43,7 @@ During runtime, Application- and Package-specific configurations can be accessed
 The [`services`](conjoon.conf.json#services)-section allows for configuring services to be looked up for the ServiceLocator in **conjoon**, making it possible to share existing functionality among the unlinked packages used with **conjoon**.
 
 :::info
-If you are interested in how the ServiceLocator works with **conjoon**, you can read more about it [here](https://medium.com/@thorstensuckow/creating-ext-js-applications-with-coon-js-part-4-using-the-service-locator-ce6bc2548352).
+If you are interested in how the ServiceLocator works with **conjoon**, you can follow [this guide](/docs/guides/servicelocator).
 :::
 
 ### Plugins  
@@ -51,5 +51,5 @@ Plugins are divided into `application`- and `component`-plugins, and allow for a
 
 ## Further information
 :::info
-If you are interested in the internals of the configuration system and how it is used with conjoon, you can refer to [this article series](https://medium.com/@thorstensuckow/creating-extjs-applications-with-coon-js-part-1-52c820d0b27c).
+If you are interested in the internals of the configuration system and how it is used with conjoon, you can refer to [this guide](/docs/guides/configurationdetails).
 :::
