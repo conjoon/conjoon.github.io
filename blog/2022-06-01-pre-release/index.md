@@ -4,11 +4,7 @@ authors: [ThorstenSuckow]
 tags: [release, birth]
 ---
 
-<p align="center">
-<img src="img/conjoon_large.png" width="200" />
-</p>
-
-5 years after the (almost) [first commit](https://github.com/conjoon/conjoon/commit/ca075e548a644011e0d9fbaa3321bcff7aa8f998) to **conjoon**'s [new home](https://github.com/conjoon/conjoon), we're happy to announce the immediate availability of the first public pre-release of **conjoon**, an open source email client built with JavaScript, PHP and great tools from the **open source** community.
+🎉 5 years after the (almost) [first commit](https://github.com/conjoon/conjoon/commit/ca075e548a644011e0d9fbaa3321bcff7aa8f998) to **conjoon**'s [new home](https://github.com/conjoon/conjoon), we're happy to announce the immediate availability of the first public pre-release of **conjoon**, an open source email client built with JavaScript, PHP and great tools from the **open source** community.
 
 Type
 
