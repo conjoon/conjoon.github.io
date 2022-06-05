@@ -1,13 +1,14 @@
 ---
 id: mail-internal-newmessages
 title: 🐝 mail-internal-newmessages
+slug: /api/plugins/@conjoon/extjs-app-webmail/mail-internal-newmessages
 ---
 
 :::caution Internal Plugin
-This is an internal plugin defined by **[extjs-app-webmail](/docs/packages/extjs-app-webmail)**.
+This is an internal plugin defined by **[extjs-app-webmail](/docs/packages/extjs-app-webmail.md)**.
 :::
 
-[Controller Plugin](/docs/plugins/overview#controller-plugins) for showing desktop notifications for new email messages. Mailboxes will be polled for new messages in a specific [interval](#interval).
+[Controller Plugin](/docs/plugins/overview.md#controller-plugins) for showing desktop notifications for new email messages. Mailboxes will be polled for new messages in a specific [interval](#interval).
 
 ## Use this plugin, if you...
 - want to poll mailboxes of mail accounts for new email messages
@@ -19,7 +20,7 @@ This package uses the [Notification API](https://developer.mozilla.org/en-US/doc
 ## Installation
 
 :::info
-This plugin is automatically installed with **[extjs-app-webmail](/docs/packages/extjs-app-webmail)** and _enabled_ by default.
+This plugin is automatically installed with **[extjs-app-webmail](/docs/packages/extjs-app-webmail.md)** and _enabled_ by default.
 :::
 
 
@@ -74,15 +75,15 @@ An array of arguments passed to the constructor of the plugin. For this plugin, 
 The interval (in milliseconds) in which mailboxes should be polled for new messages. Defaults to 240000 ms (4 minutes).
 
 :::info Additional Configuration
-Additional settings for this plugin can be configured with the [extjs-app-webmail](/docs/packages/extjs-app-webmail) configuration.
+Additional settings for this plugin can be configured with the [extjs-app-webmail](/docs/packages/extjs-app-webmail.md) configuration.
 
 ##### `resources.images.notifications.newEmail`
 - Type: `String`
  
-Please refer to [this entry](/docs/packages/extjs-app-webmail#newEmail-image) for more information on this field
+Please refer to [this entry](/docs/packages/extjs-app-webmail.md#newEmail-image) for more information on this field
 
 ###### `resources.sounds.notifications.newEmail`
 - Type: `String`
 
-Please refer to [this entry](/docs/packages/extjs-app-webmail#newEmail-sound) for more information on this field
+Please refer to [this entry](/docs/packages/extjs-app-webmail.md#newEmail-sound) for more information on this field
 :::

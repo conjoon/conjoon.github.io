@@ -1,13 +1,14 @@
 ---
 id: mail-internal-previewtext
 title: 🐝 mail-internal-previewtext
+slug: /api/plugins/@conjoon/extjs-app-webmail/mail-internal-previewtext
 ---
 
 :::caution Internal Plugin
-This is an internal plugin defined by **[extjs-app-webmail](/docs/packages/extjs-app-webmail)**.
+This is an internal plugin defined by **[extjs-app-webmail](/docs/packages/extjs-app-webmail.md)**.
 :::
 
-[Component Plugin](/docs/plugins/overview#component-plugins) for lazy loading preview texts of email messages into the message grid, making sure envelope informations are loaded and rendered first.
+[Component Plugin](/docs/plugins/overview.md#component-plugins) for lazy loading preview texts of email messages into the message grid, making sure envelope informations are loaded and rendered first.
 
 ## Use this plugin, if you...
 - want to speed up the initial loading of the contents of the message grid
@@ -15,7 +16,7 @@ This is an internal plugin defined by **[extjs-app-webmail](/docs/packages/extjs
 ## Installation
 
 :::info
-This plugin is automatically installed with **[extjs-app-webmail](/docs/packages/extjs-app-webmail)** and _enabled_ by default.
+This plugin is automatically installed with **[extjs-app-webmail](/docs/packages/extjs-app-webmail.md)** and _enabled_ by default.
 :::
 
 
@@ -73,7 +74,7 @@ The event notifying observers that the target component is readily available for
 :::tip
 The plugin does not support external configuration yet.
 
-The [options](https://conjoon.stoplight.io/docs/rest-api-description/3eea63cb2e7ec-get-a-collection-of-envelope-information-of-messages#options)-parameters sent to the [REST API](/docs/rest-api/rest-api-email) endpoint `/MailAccounts/{mailAccountId}/MailFolders/{mailFolderId}/MessageItems` for retrieving the `previewText` are as follows:
+The [options](https://conjoon.stoplight.io/docs/rest-api-description/3eea63cb2e7ec-get-a-collection-of-envelope-information-of-messages#options)-parameters sent to the [REST API](/docs/rest-api/rest-api-email.md) endpoint `/MailAccounts/{mailAccountId}/MailFolders/{mailFolderId}/MessageItems` for retrieving the `previewText` are as follows:
 
 ```json
 {
@@ -91,7 +92,7 @@ The [options](https://conjoon.stoplight.io/docs/rest-api-description/3eea63cb2e7
 }
 ```
 
-You can find these settings in the file `src/data/mail/message/proxy/MessageEntityProxy.js` of the [extjs-app-webmail](/docs/packages/extjs-app-webmail)-package.
+You can find these settings in the file `src/data/mail/message/proxy/MessageEntityProxy.js` of the [extjs-app-webmail](/docs/packages/extjs-app-webmail.md)-package.
 :::
 
 

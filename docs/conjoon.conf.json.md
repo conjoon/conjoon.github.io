@@ -104,7 +104,7 @@ An object containing a `message`:`String` and a `type`:`info|alert|warning|succe
 An object containing all the packages that should be used with **conjoon**. If no package configuration is available here, but the package gets loaded nonetheless, the configuration available with the package will be used. 
 
 :::tip
-For package specific configurations of packages available with the base installation of **conjoon**, please refer to the [Packages Guide](/docs/packages/overview).
+For package specific configurations of packages available with the base installation of **conjoon**, please refer to the [Packages Guide](/docs/packages/overview.md).
 :::
 
 There are a two relevant fields that are used with each package configuration: `autoLoad` and `config`. Let's have a look at an example for the package named `package-calendar` that gets configured with `conjoon.conf.json`:
@@ -205,10 +205,10 @@ An object specifying the fields `application` and/or `components`, providing inf
 
 :::info Pre-installed Plugins
 **conjoon** comes pre-installed with the following plugins 
-- [app-internal-titlechange](/docs/plugins/app-internal-titlechange) 
-- [app-internal-desktopquotes](/docs/plugins/app-internal-desktopquotes)
-- [theme-internal-modeswitch](/docs/plugins/theme-internal-modeswitch)
-- [extjs-plug-themeutil](/docs/plugins/extjs-plug-themeutil)
+- [app-internal-titlechange](/docs/plugins/app-internal-titlechange.md) 
+- [app-internal-desktopquotes](/docs/plugins/app-internal-workbenchquotes.md)
+- [theme-internal-modeswitch](/docs/plugins/theme-internal-modeswitch.md)
+- [extjs-plug-themeutil](/docs/plugins/extjs-plug-themeutil.md)
 :::
 
 #### `application` {#plugins-application}
@@ -284,5 +284,5 @@ An array of arguments that get passed to the constructor of the plugin
 ## Further Reading
 
 :::info
-An in-depth look at the internals of **conjoon*'s configuration system can be found [here](/docs/guides/configurationdetails).
+An in-depth look at the internals of **conjoon*'s configuration system can be found [here](/docs/guides/configurationdetails.md).
 :::

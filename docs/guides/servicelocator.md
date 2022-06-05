@@ -8,7 +8,7 @@ description: Registering services and using the Service Locator
 This guide focuses on details of the configuration options available when using `coon.core.app.Application` from the `coon.js`-package; namely the services-configuration option that lets you define services that can be queried using `coon.core.ServiceLocator`, providing a central registry for concrete classes mapped to abstracts.
 
 :::tip
-With **conjoon**, you are able to configure services with the help of the [application configuration](/docs/conjoon.conf.json#services). This guide gives some details on when to use services, and how its done.
+With **conjoon**, you are able to configure services with the help of the [application configuration](/docs/conjoon.conf.json.md#services). This guide gives some details on when to use services, and how its done.
 :::
 
 :::info

@@ -1,27 +1,28 @@
 ---
 id: extjs-app-imapuser
 title: 📦 extjs-app-imapuser
+slug: /api/packages/@conjoon/extjs-app-imapuser
 ---
  
-[Application Package](/docs/packages/overview#application-packages) for providing the UI and client logic for user authentication against a configurable endpoint. 
+[Application Package](/docs/packages/overview.md#application-packages) for providing the UI and client logic for user authentication against a configurable endpoint. 
 
-This package supports [rest-api-email](/docs/rest-api/rest-api-email) for authenticating
+This package supports [rest-api-email](/docs/rest-api/rest-api-email.md) for authenticating
 a user against an IMAP server, where the sign-in crendentials for an IMAP-account are the login-information
 submitted via this package's login form.
 
 ## Use this package, if you... 
  - want to allow users to directly authenticate against an IMAP server
  - are an ISP and want to provide webmail services for your clients based on IMAP account information
- - are using [lumen-app-email](docs/backends/lumen-app-email)
+ - are using [lumen-app-email](docs/backends/lumen-app-email.md)
 
 ### Requirements
 This package requires a service that complies with the REST API described in `rest-api-email` which can be found in the [REST API description](https://github.com/conjoon/rest-api-description) of the **conjoon**-project.
 :::tip Works great with lumen-app-email!
-This package was developed along with [lumen-app-email](/docs/backends/lumen-app-email) and is ready to be used with it.
+This package was developed along with [lumen-app-email](/docs/backends/lumen-app-email.md) and is ready to be used with it.
 :::
 
 :::info Mocking required Services
-When using this package without a running backend, you should use the [extjs-dev-imapusersim](extjs-dev-imapusersim)-package for providing fake endpoints.
+When using this package without a running backend, you should use the [extjs-dev-imapusersim](extjs-dev-imapusersim.md)-package for providing fake endpoints.
 :::
 
 ## Installation
@@ -102,10 +103,10 @@ By default, this package's configuration can be found in this package's `resourc
 ### What goes into an `extjs-app-imapuser` configuration?
 
 :::tip conjoon.conf.json
-The following can be applied directly to `conjoon.conf.json`. Refer to the [configuration guide](/docs/configuration#package-configurations)!
+The following can be applied directly to `conjoon.conf.json`. Refer to the [configuration guide](/docs/configuration.md#package-configurations)!
 :::
 
-The package takes care of sending sign-in credentials of a user via HTTP to a backend implementing [rest-api-mail](/docs/rest-api/rest-api-email). Used with **conjoon**, it will also hook into the preLaunch-process and render views for providing form inputs for the user.
+The package takes care of sending sign-in credentials of a user via HTTP to a backend implementing [rest-api-mail](/docs/rest-api/rest-api-email.md). Used with **conjoon**, it will also hook into the preLaunch-process and render views for providing form inputs for the user.
 
 The configuration for this package provides two fields: `tile` and `service`:
 
@@ -129,4 +130,4 @@ The title of the package. This is used for assembling navigation entries, or cha
  - Type: `Object`
 
 Endpoint configuration for this package. Used to create required URLs for outgoing HTTP-requests. 
-Provides the field `rest-imapuser.base` that must contain the base URL where  endpoints for authentication as described in [rest-api-mail](/docs/rest-api/rest-api-email) can be found.
+Provides the field `rest-imapuser.base` that must contain the base URL where  endpoints for authentication as described in [rest-api-mail](/docs/rest-api/rest-api-email.md) can be found.

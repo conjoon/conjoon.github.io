@@ -1,9 +1,10 @@
 ---
 id: extjs-plug-themeutil
 title: 🐝 extjs-plug-themeutil
+slug: /api/plugins/@coon-js/extjs-plug-themeutil
 ---
  
-[Application Plugin](/docs/plugins/overview#application-plugins) for registering a `coon.core.Theme` (e.g. [extjs-theme-material](/docs/themes/extjs-theme-material)) with the theme manager used by **conjoon**.
+[Application Plugin](/docs/plugins/overview.md#application-plugins) for registering a `coon.core.Theme` (e.g. [extjs-theme-material](/docs/themes/extjs-theme-material.md)) with the theme manager used by **conjoon**.
 
 * Reads out configuration from the {coon.core.ConfigManager} for the theme's package and
 * applies its "modes"-value (if config available) to the theme.

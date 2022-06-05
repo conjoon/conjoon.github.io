@@ -1,24 +1,25 @@
 ---
 id: extjs-app-webmail
 title: 📦 extjs-app-webmail
+slug: /api/packages/@conjoon/extjs-app-webmail
 ---
 
-[Application Package](/docs/packages/overview#application-packages) for providing the UI and client logic for a lightweight, feature-rich email client.
+[Application Package](/docs/packages/overview.md#application-packages) for providing the UI and client logic for a lightweight, feature-rich email client.
 
-This package supports [rest-api-email](/docs/rest-api/rest-api-email) for IMAP/SMTP operations.
+This package supports [rest-api-email](/docs/rest-api/rest-api-email.md) for IMAP/SMTP operations.
 
 ## Use this package, if you...
 - want to manage multiple mail accounts in a single browser instance
-- are using [lumen-app-email](docs/backends/lumen-app-email)
+- are using [lumen-app-email](docs/backends/lumen-app-email.md)
 
 ### Requirements
 This package requires a service that complies with the REST API described in `rest-api-email` which can be found in the [REST API description](https://github.com/conjoon/rest-api-description) of the **conjoon**-project.
 :::tip Works great with lumen-app-email!
-This package was developed along with [lumen-app-email](/docs/backends/lumen-app-email) and is ready to be used with it.
+This package was developed along with [lumen-app-email](/docs/backends/lumen-app-email.md) and is ready to be used with it.
 :::
 
 :::info Mocking required Services
-When using this package without a running backend, you should use the [extjs-dev-webmailsim](extjs-dev-webmailsim)-package for providing fake endpoints.
+When using this package without a running backend, you should use the [extjs-dev-webmailsim](extjs-dev-webmailsim.md)-package for providing fake endpoints.
 :::
 
 
@@ -99,7 +100,7 @@ By default, this package's configuration can be found in this package's `resourc
 ### What goes into an `extjs-app-webmail` configuration?
 
 :::tip conjoon.conf.json
-The following can be applied directly to `conjoon.conf.json`. Refer to the [configuration guide](/docs/configuration#package-configurations)!
+The following can be applied directly to `conjoon.conf.json`. Refer to the [configuration guide](/docs/configuration.md#package-configurations)!
 :::
 
 The configuration file for this package contains various key/value-pairs, configuring the behavior
@@ -185,17 +186,17 @@ An html-template to use with the message reader.
 #### `service`
 - Type: `Object`
 
-Endpoint configuration for this package. Used to create required URLs for outgoing HTTP-requests. Provides the field `rest-api-email.base` that must contain the base URL where endpoints for email operations as described in [rest-api-mail](/docs/rest-api/rest-api-email) can be found.
+Endpoint configuration for this package. Used to create required URLs for outgoing HTTP-requests. Provides the field `rest-api-email.base` that must contain the base URL where endpoints for email operations as described in [rest-api-mail](/docs/rest-api/rest-api-email.md) can be found.
 
 #### `plugins` 
-Section for specifying [component](/docs/plugins/overview#component-plugins) and [controller](/docs/plugins/overview#controller-plugins) plugins.
+Section for specifying [component](/docs/plugins/overview.md#component-plugins) and [controller](/docs/plugins/overview.md#controller-plugins) plugins.
 
 This package comes pre-configured with the following component plugins:
 
- - `conjoon.cn_mail.view.mail.message.grid.feature.PreviewTextLazyLoad`<br />A plugin for lazy loading email message preview texts in the grid, making sure that envelope information of available messages are loaded and rendered first. You can find more about it [here](/docs/plugins/mail-internal-previewtext).
+ - `conjoon.cn_mail.view.mail.message.grid.feature.PreviewTextLazyLoad`<br />A plugin for lazy loading email message preview texts in the grid, making sure that envelope information of available messages are loaded and rendered first. You can find more about it [here](/docs/plugins/mail-internal-previewtext.md).
 
 
 This package comes pre-configured with the following controller plugins:
 
- -  `conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin`<br />A plugin for automatically querying mailboxes for new messages. Plays notification sounds when new messages have been received. If allowed by the user, desktop notifications are shown for new messages, too. The default interval for looking up new messages is set to 240000 ms. [Sounds](#newEmail-sound) and [images](#newEmail-image) can be configured to be used with this plugin. You can find more about it [here](/docs/plugins/mail-internal-newmessages).
+ -  `conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin`<br />A plugin for automatically querying mailboxes for new messages. Plays notification sounds when new messages have been received. If allowed by the user, desktop notifications are shown for new messages, too. The default interval for looking up new messages is set to 240000 ms. [Sounds](#newEmail-sound) and [images](#newEmail-image) can be configured to be used with this plugin. You can find more about it [here](/docs/plugins/mail-internal-newmessages.md).
 

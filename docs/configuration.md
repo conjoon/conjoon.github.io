@@ -5,7 +5,7 @@ description: Configuring an installation of conjoon and its frontend packages
 ---
 
 :::info
-This guide focuses on the configuration of the web-client of **conjoon**. For more information on the configuration of one of the available backends, please refer to the [Backend Guide](backends/overview)
+This guide focuses on the configuration of the web-client of **conjoon**. For more information on the configuration of one of the available backends, please refer to the [Backend Guide](/docs/backends/overview.md)
 :::
 
 **conjoon** is a set of packages that need to get activated with the main application in order to work. This guide shows how to use the central configuration file for the whole application, and how to adjust package-specific settings.
@@ -43,7 +43,7 @@ During runtime, Application- and Package-specific configurations can be accessed
 The [`services`](conjoon.conf.json#services)-section allows for configuring services to be looked up for the ServiceLocator in **conjoon**, making it possible to share existing functionality among the unlinked packages used with **conjoon**.
 
 :::info
-If you are interested in how the ServiceLocator works with **conjoon**, you can follow [this guide](/docs/guides/servicelocator).
+If you are interested in how the ServiceLocator works with **conjoon**, you can follow [this guide](/docs/guides/servicelocator.md).
 :::
 
 ### Plugins  

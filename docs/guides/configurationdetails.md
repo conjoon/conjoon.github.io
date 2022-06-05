@@ -6,7 +6,7 @@ description: Configuration Details and defining Plugins
 
 :::tip
 With **conjoon**, you are able to configure application behavior with the help of
-its [configuration file](/docs/conjoon.conf.json). This guide sheds some light on how to configure controller-,
+its [configuration file](/docs/conjoon.conf.json.md). This guide sheds some light on how to configure controller-,
 application- and component-plugins.
 
 **conjoon** is essentially a **[coon.js](https://github.com/coon-js)**-application. Whenever we speak of "a **coon.js**
@@ -195,7 +195,7 @@ or
 ### Resolving to the application's resource-path
 
 The following resolves
-to [`resources/[coon-js.resourcePath]/extjs-app-webmail.conf.json`](/docs/packages/extjs-app-webmail#what-goes-into-an-extjs-app-webmail-configuration)
+to [`resources/[coon-js.resourcePath]/extjs-app-webmail.conf.json`](/docs/packages/extjs-app-webmail.md#what-goes-into-an-extjs-app-webmail-configuration)
 . In this case, configuration will be read out from the resources-folder of the application, not the package itself.
 This spares developers the tedious task of looking up individual files throughout packages in the file system; it makes
 it possible to have all configuration centralized at one place, maintaining this one file with .gitignore, if necessary.
@@ -335,7 +335,7 @@ There are two (obvious) differences:
 
 - When not using the fqn, application plugins will be looked up given the
   pattern `[package_namespace].app.plugin.ApplicationPlugin`
-- application plugins must be configured in the [application configuration](/docs/conjoon.conf.json#application), namely
+- application plugins must be configured in the [application configuration](/docs/conjoon.conf.json.md#application), namely
   in the `[application_name].plugins.application` section
 
 **Example:**

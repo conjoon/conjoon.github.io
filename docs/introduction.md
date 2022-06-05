@@ -19,11 +19,10 @@ slug: /
 Install [Node.js](https://nodejs.org/en/download) and create a new **conjoon** site:
 
 ```bash
-npx create-conjoon@latest target_folder
+npx create-conjoon@latest
 ```
 
 Follow the instructions on screen.
-
 
 ```bash
 cd target_folder
@@ -32,11 +31,11 @@ npm run stage
 
 Your site starts at `http://localhost:9001` with a production build of **conjoon**.
 
-Open `build/production/conjoon/desktop/resources/coon-js/conjoon.conf.json` and edit the packages' endpoints if you have a [backend](/docs/backends/overview) available. 
+Open `build/production/conjoon/desktop/resources/coon-js/conjoon.conf.json` and edit the packages' endpoints if you have a [backend](/docs/backends/overview.md) available. 
 
 :::tip 
 You have just installed the latest build available for **conjoon**.
-For instructions on how to build the project from scratch, check out the [**installation guide**](./installation). 
+For instructions on how to build the project from scratch, check out the [**installation guide**](./installation.md). 
 :::
 
 ## Features 🎁
@@ -49,7 +48,7 @@ The Backend is an **easy to install** [Lumen/Laravel](https://lumen.laravel.com/
 
 IMAP / SMTP protocol implementations for **all relevant** email operations
 
-[REST API documentation](/docs/rest-api/overview) available as OpenAPI documentation
+[REST API documentation](/docs/rest-api/overview.md) available as OpenAPI documentation
 
 **Tested** with the most **popular free email services**
 

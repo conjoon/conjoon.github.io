@@ -104,6 +104,17 @@ const sidebars = {
             collapsed: true,
             link: {type: "doc", id: "rest-api/overview"},
             items: ["rest-api/rest-api-email"]
+        },
+        /**
+         * +---------------------------
+         * |       Miscellaneous
+         * +---------------------------
+         */
+        {
+            type: "category",
+            label: "Miscellaneous",
+            collapsed: true,
+            items: ["misc/create-conjoon"]
         }
 
     ],
