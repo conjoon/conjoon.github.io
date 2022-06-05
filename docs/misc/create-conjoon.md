@@ -50,7 +50,7 @@ Base url where authentication endpoints are found.
 - _Type_: `String`
 - _default_: `https://ddev-ms-email.ddev.site/rest-api-email/api/v0/`
 
-Base url where the [rest-api-email](/rest-api/rest-api-email)-endpoints can be found
+Base url where the [rest-api-email](/docs/rest-api/rest-api-email.md)-endpoints can be found
 
 ### `Version`
 - _Type_: `select/String`
@@ -59,5 +59,5 @@ Base url where the [rest-api-email](/rest-api/rest-api-email)-endpoints can be f
 Provides a list of the last 5 releases, and a text input to manually enter the required version, if the user wants to install an older release of **conjoon**. Requested versions will be looked up in the NPM registry. A message will be shown if the release was not found in the registry 
 
 :::tip
-Use the **quick** installation to get the **conjoon** frontend running locally. You can always configure the application to a later point for connecting to existing [backends](/docs/backends/overview)
+Use the **quick** installation to get the **conjoon** frontend running locally. You can always configure the application to a later point for connecting to existing [backends](/docs/backends/overview.md)
 :::

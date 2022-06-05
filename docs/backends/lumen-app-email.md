@@ -4,7 +4,7 @@ title: 🚪 lumen-app-email
 slug: /api/backends/@conjoon/lumen-app-email
 ---
 
-**lumen-app-email** is a PHP application built with [Lumen](https://lumen.laravel.com) requiring minimal setup. It provides the REST API implementation according to [rest-api-email](/docs/rest-api/rest-api-email) and serves as a lightweight backend providing functionality for reading, writing and sending email messages.
+**lumen-app-email** is a PHP application built with [Lumen](https://lumen.laravel.com) requiring minimal setup. It provides the REST API implementation according to [rest-api-email](/docs/rest-api/rest-api-email.md) and serves as a lightweight backend providing functionality for reading, writing and sending email messages.
 
 
 ## Use Case
@@ -23,7 +23,7 @@ slug: /api/backends/@conjoon/lumen-app-email
 
 ## Supported REST API
 * **rest-api-email**
-  For the list of endpoints this microservice provides, please refer to the openAPI documentation of [rest-api-email](/docs/rest-api/rest-api-email).
+  For the list of endpoints this microservice provides, please refer to the openAPI documentation of [rest-api-email](/docs/rest-api/rest-api-email.md).
 
 ### REST Examples
 ````http request
@@ -159,4 +159,4 @@ Multiple root entries will be considered. This is useful with Google Mail, where
 
 
 ### Additional Resources
-The documentation of [rest-api-email](/docs/rest-api/rest-api-email) provides information about querying available mailboxes for an authenticated client.
+The documentation of [rest-api-email](/docs/rest-api/rest-api-email.md) provides information about querying available mailboxes for an authenticated client.

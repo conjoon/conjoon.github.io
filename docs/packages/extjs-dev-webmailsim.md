@@ -4,7 +4,7 @@ title: 📦 extjs-dev-webmailsim
 slug: /api/packages/@conjoon/extjs-dev-webmailsim
 ---
 
-[Development Package](/docs/packages/overview#development-packages) providing fake endpoints for the development of [extjs-app-webmail](./extjs-app-webmail).
+[Development Package](/docs/packages/overview.md#development-packages) providing fake endpoints for the development of [extjs-app-webmail](./extjs-app-webmail).
 
 The package intercepts outgoing network requests to all urls matching a specific regular expression. Additionally, you can configure whether the package's intercepting should be enabled or disabled - this makes it easier to use this package in environments where you have to test for fully functional network behavior with real HTTP-requests and live- and mock-data should be used side-by-side.
 
@@ -90,7 +90,7 @@ in a file named `extjs-dev-webmailsim.conf.json`.
 ### What goes into an `extjs-dev-webmailsim` configuration?
 
 :::tip conjoon.conf.json
-The following can be applied directly to `conjoon.dev.conf.json`. Refer to the [configuration guide](/docs/configuration#package-configurations)!
+The following can be applied directly to `conjoon.dev.conf.json`. Refer to the [configuration guide](/docs/configuration.md#package-configurations)!
 :::
 
 The configuration file for this package has various entries representing entities endpoints for accessing them:
@@ -125,7 +125,7 @@ Each entry in the configuration can be configured with
 #### `url`
 - Type: `String`
 
-In order to properly intercept outgoing requests to the services as described in [rest-api-mail](/docs/rest-api/rest-api-email), the package needs to be configured with a regular expression for matching urls that should be intercepted for accessing the represented entity.
+In order to properly intercept outgoing requests to the services as described in [rest-api-mail](/docs/rest-api/rest-api-email.md), the package needs to be configured with a regular expression for matching urls that should be intercepted for accessing the represented entity.
 :::info
 The package is pre-configured with these regular expressions. For example, HTTP-requests to the following URLs are intercepted by this package:
 - `https://dev-ms-email.ddev.site/rest-api-email/api/v0/MailAccounts`
@@ -165,4 +165,4 @@ would be intercepted by the regular expression defined with `mailFolder` (becaus
 :::
 
 ## Changing Response Data
-If an url was intercepted, static data is returned, complying with [REST API](/docs/rest-api/rest-api-email). Static data can be edited in the files `src/data/table/MessageTable.js` (message envelopes and bodies) and `src/data/table/AttachmentTable.js` (attachments), which are both part of this package.
+If an url was intercepted, static data is returned, complying with [REST API](/docs/rest-api/rest-api-email.md). Static data can be edited in the files `src/data/table/MessageTable.js` (message envelopes and bodies) and `src/data/table/AttachmentTable.js` (attachments), which are both part of this package.

@@ -5,13 +5,13 @@ slug: /api/plugins/@conjoon/extjs-theme-material/theme-internal-modeswitch
 ---
 
 :::caution Internal Plugin
-This is an internal plugin defined by **[extjs-theme-material](/docs/themes/extjs-theme-material)**.
+This is an internal plugin defined by **[extjs-theme-material](/docs/themes/extjs-theme-material.md)**.
 :::
 
-[Component Plugin](/docs/plugins/overview#component-plugins) providing a button for switching between the **light**/**dark** mode of [extjs-theme-material](/docs/themes/extjs-theme-material). An additional button for toggling between the modes is rendered into the navigation bar of **conjoon**. 
+[Component Plugin](/docs/plugins/overview.md#component-plugins) providing a button for switching between the **light**/**dark** mode of [extjs-theme-material](/docs/themes/extjs-theme-material.md). An additional button for toggling between the modes is rendered into the navigation bar of **conjoon**. 
 
 ## Use this plugin, if you...
-- want to provide a control for the user for switching between the **light** and **dark** mode of [extjs-theme-material](/docs/themes/extjs-theme-material)
+- want to provide a control for the user for switching between the **light** and **dark** mode of [extjs-theme-material](/docs/themes/extjs-theme-material.md)
 
 ## Installation
 

@@ -4,7 +4,7 @@ title: 📦 extjs-ctrl-simmanager
 slug: /api/packages/@coon-js/extjs-ctrl-simmanager
 ---
 
-[Development Package](/docs/packages/overview#development-packages) providing a `null` default simlet when using fake endpoints with **conjoon**. This makes sure that requests can bypass the simlet factories and are treated natively.
+[Development Package](/docs/packages/overview.md#development-packages) providing a `null` default simlet when using fake endpoints with **conjoon**. This makes sure that requests can bypass the simlet factories and are treated natively.
 
 ## Use this package, if you...
 - are developing with **conjoon** and want to make sure that HTTP requests not handled by simlets still work

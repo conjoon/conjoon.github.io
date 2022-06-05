@@ -8,7 +8,7 @@ slug: /api/plugins/@conjoon/conjoon/app-internal-titlechange
 This is an internal plugin defined by **conjoon**. 
 :::
 
-[Application Plugin](/docs/plugins/overview#application-plugins) for changing the title of the browser window based on the information provided with the global `conjoon.application.TitleAvailable`-event and the [`titleTpl`](/docs/conjoon.conf.json.md#application-titleTpl)-configuration.
+[Application Plugin](/docs/plugins/overview.md#application-plugins) for changing the title of the browser window based on the information provided with the global `conjoon.application.TitleAvailable`-event and the [`titleTpl`](/docs/conjoon.conf.json.md#application-titleTpl)-configuration.
 
 
 ## Use this plugin, if you...

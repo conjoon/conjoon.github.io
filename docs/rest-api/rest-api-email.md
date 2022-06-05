@@ -6,7 +6,7 @@ slug: /api/rest-api/@conjoon/rest-api-description/rest-api-email
 
 OpenAPI description for a REST API providing endpoints for accessing email messaging related services.
 
-- [rest-api-email](https://conjoon.stoplight.io/docs/rest-api-description)
+- [rest-api-email](https://conjoon.stoplight.io/docs/rest-api-description.md)
 
 :::info Project Status
 The description is in **active development**. If you've identified a mismatch between **conjoon** API's behavior and these descriptions, [please open an issue.](https://github.com/conjoon/rest-api-description/issues/new)

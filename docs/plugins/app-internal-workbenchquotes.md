@@ -8,7 +8,7 @@ slug: /api/plugins/@conjoon/conjoon/app-internal-desktopquotes
 This is an internal plugin defined by **conjoon**.
 :::
 
-[Component Plugin](/docs/plugins/overview#component-plugins) for greeting the user with a random quote that gets displayed in the main content area of **conjoon** upon startup.
+[Component Plugin](/docs/plugins/overview.md#component-plugins) for greeting the user with a random quote that gets displayed in the main content area of **conjoon** upon startup.
 
 ## Use this plugin, if you...
 - want to greet your users with a random quote when they start **conjoon**

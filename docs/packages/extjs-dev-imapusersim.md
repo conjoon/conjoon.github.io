@@ -4,12 +4,12 @@ title: 📦 extjs-dev-imapusersim
 slug: /api/packages/@conjoon/extjs-ctrl-simmanager
 ---
 
-[Development Package](/docs/packages/overview#development-packages) providing fake endpoints for the development of [extjs-app-imapuser](./extjs-app-imapuser).
+[Development Package](/docs/packages/overview.md#development-packages) providing fake endpoints for the development of [extjs-app-imapuser](./extjs-app-imapuser.md).
 
 The package intercepts outgoing network requests to all urls matching a specific regular expression. Additionally, you can configure whether the package's intercepting should be enabled or disabled - this makes it easier to use this package in environments where you have to test for fully functional network behavior with real HTTP-requests and live- and mock-data should be used side-by-side.
 
 ## Use this package, if you...
-- are developing with **conjoon** and want to use demo data with [extjs-app-imapuser](./extjs-app-imapuser)
+- are developing with **conjoon** and want to use demo data with [extjs-app-imapuser](./extjs-app-imapuser.md)
 
 ## Installation
 
@@ -89,7 +89,7 @@ By default, this package's configuration can be found in this package's `resourc
 ### What goes into an `extjs-dev-imapusersim` configuration?
 
 :::tip conjoon.conf.json
-The following can be applied directly to `conjoon.dev.conf.json`. Refer to the [configuration guide](/docs/configuration#package-configurations)!
+The following can be applied directly to `conjoon.dev.conf.json`. Refer to the [configuration guide](/docs/configuration.md#package-configurations)!
 :::
 
 The configuration file for this package has an entry `auth` that holds the following keys: `url`, `enabled`, `delay`:
@@ -107,7 +107,7 @@ The configuration file for this package has an entry `auth` that holds the follo
 #### `url` 
 - Type: `String`
 
-In order to properly intercept outgoing requests to the services as described in [rest-api-mail](/docs/rest-api/rest-api-email), the package needs to be configured with a regular expression for matching urls that should be intercepted. 
+In order to properly intercept outgoing requests to the services as described in [rest-api-mail](/docs/rest-api/rest-api-email.md), the package needs to be configured with a regular expression for matching urls that should be intercepted. 
 :::info
 The package is pre-configured with these regular expressions. For example, HTTP-requests to the following URLs are intercepted by this package:
   - `https://dev-ms-email.ddev.site/rest-imapuser/api/v0/auth`
@@ -125,4 +125,4 @@ If this package is used with your development or production environment, interce
 The delay (in milliseconds) for responses to be returned, to mimic network latency.
 
 ## Changing Response Data
-If an url was intercepted, static data is returned, complying with [REST API](/docs/rest-api/rest-api-email). Static data can be edited in the file `src/data/AuthenticationSim.js`, which is part of this package.
+If an url was intercepted, static data is returned, complying with [REST API](/docs/rest-api/rest-api-email.md). Static data can be edited in the file `src/data/AuthenticationSim.js`, which is part of this package.

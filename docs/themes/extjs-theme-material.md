@@ -4,7 +4,7 @@ title: 🎨 extjs-theme-material
 slug: /api/themes/@conjoon/extjs-theme-material
 ---
 
-[Theme](/docs/themes/overview) containing the material theme for **conjoon**.
+[Theme](/docs/themes/overview.md) containing the material theme for **conjoon**.
 
 ## Use this theme, if you...
 - are looking for a modern material theme with exposed css variables and light- / dark-mode options. 
@@ -85,7 +85,7 @@ By default, this package's configuration can be found in this package's `resourc
 ### What goes into an `extjs-theme-material` configuration?
 
 :::tip conjoon.conf.json
-The following can be applied directly to `conjoon.conf.json`. Refer to the [configuration guide](/docs/configuration#package-configurations)!
+The following can be applied directly to `conjoon.conf.json`. Refer to the [configuration guide](/docs/configuration.md#package-configurations)!
 :::
 
 The following options can be configured to change the appearance of **conjoon**:
@@ -165,4 +165,4 @@ Variables edited here need to be existing in the theme's SASS-files.
 :::
 
 ## Plugins
-**extjs-theme-material** provides [theme-internal-modeswitch](/docs/plugins/theme-internal-modeswitch).
+**extjs-theme-material** provides [theme-internal-modeswitch](/docs/plugins/theme-internal-modeswitch.md).
