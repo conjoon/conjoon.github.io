@@ -1,6 +1,7 @@
 ---
 id: mail-internal-newmessages
 title: 🐝 mail-internal-newmessages
+slug: /api/plugins/@conjoon/extjs-app-webmail/mail-internal-newmessages
 ---
 
 :::caution Internal Plugin

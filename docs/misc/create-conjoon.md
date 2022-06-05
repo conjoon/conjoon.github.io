@@ -1,5 +1,5 @@
 ---
-slug: /api/misc/create-conjoon
+slug: /api/misc/@conjoon/create-conjoon
 ---
 
 # 📦 create-conjoon

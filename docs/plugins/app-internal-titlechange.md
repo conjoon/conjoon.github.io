@@ -1,6 +1,7 @@
 ---
 id: app-internal-titlechange
 title: 🐝 app-internal-titlechange
+slug: /api/plugins/@conjoon/conjoon/app-internal-titlechange
 ---
 
 :::caution Internal Plugin

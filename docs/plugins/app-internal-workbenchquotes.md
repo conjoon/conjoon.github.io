@@ -1,6 +1,7 @@
 ---
 id: app-internal-desktopquotes
 title: 🐝 app-internal-desktopquotes
+slug: /api/plugins/@conjoon/conjoon/app-internal-desktopquotes
 ---
 
 :::caution Internal Plugin

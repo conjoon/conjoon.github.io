@@ -1,6 +1,7 @@
 ---
 id: theme-internal-modeswitch
 title: 🐝 theme-internal-modeswitch
+slug: /api/plugins/@conjoon/extjs-theme-material/theme-internal-modeswitch
 ---
 
 :::caution Internal Plugin

@@ -1,6 +1,7 @@
 ---
 id: extjs-dev-imapusersim
 title: 📦 extjs-dev-imapusersim
+slug: /api/packages/@conjoon/extjs-ctrl-simmanager
 ---
 
 [Development Package](/docs/packages/overview#development-packages) providing fake endpoints for the development of [extjs-app-imapuser](./extjs-app-imapuser).

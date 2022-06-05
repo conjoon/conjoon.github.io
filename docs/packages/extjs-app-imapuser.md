@@ -1,6 +1,7 @@
 ---
 id: extjs-app-imapuser
 title: 📦 extjs-app-imapuser
+slug: /api/packages/@conjoon/extjs-app-imapuser
 ---
  
 [Application Package](/docs/packages/overview#application-packages) for providing the UI and client logic for user authentication against a configurable endpoint. 

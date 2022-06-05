@@ -1,6 +1,7 @@
 ---
 id: mail-internal-previewtext
 title: 🐝 mail-internal-previewtext
+slug: /api/plugins/@conjoon/extjs-app-webmail/mail-internal-previewtext
 ---
 
 :::caution Internal Plugin

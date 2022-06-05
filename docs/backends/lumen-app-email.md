@@ -1,6 +1,7 @@
 ---
 id: lumen-app-email
 title: 🚪 lumen-app-email
+slug: /api/backends/@conjoon/lumen-app-email
 ---
 
 **lumen-app-email** is a PHP application built with [Lumen](https://lumen.laravel.com) requiring minimal setup. It provides the REST API implementation according to [rest-api-email](/docs/rest-api/rest-api-email) and serves as a lightweight backend providing functionality for reading, writing and sending email messages.

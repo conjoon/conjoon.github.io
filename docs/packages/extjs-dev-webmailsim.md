@@ -1,6 +1,7 @@
 ---
 id: extjs-dev-webmailsim
 title: 📦 extjs-dev-webmailsim
+slug: /api/packages/@conjoon/extjs-dev-webmailsim
 ---
 
 [Development Package](/docs/packages/overview#development-packages) providing fake endpoints for the development of [extjs-app-webmail](./extjs-app-webmail).

@@ -70,13 +70,10 @@ const config = {
             ({
                 docs: {
                     sidebarPath: require.resolve("./sidebars.js"),
-                    // Please change this to your repo.
-                    editUrl: "https://github.com/conjoon/conjoon/"
-                },
-                blog: {
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    editUrl: "https://github.com/conjoon/conjoon/"
+                    editUrl: ({locale, docPath}) => {
+                        const nextVersionDocsDirPath = "docs";
+                        return `https://github.com/conjoon/conjoon.github.io/edit/main/${nextVersionDocsDirPath}/${docPath}`;
+                    }
                 },
                 theme: {
                     customCss: require.resolve("./src/css/custom.css")

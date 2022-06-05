@@ -1,6 +1,7 @@
 ---
 id: ddev-ms-email
 title: 🚪 ddev-ms-email
+slug: /api/backends/@conjoon/ddev-ms-email
 ---
 
 .ddev/Docker configuration providing standalone server for [lumen-app-email](lumen-app-email).

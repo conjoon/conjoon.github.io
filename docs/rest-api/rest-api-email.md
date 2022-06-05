@@ -1,6 +1,7 @@
 ---
 id: rest-api-email
 title: 📞 rest-api-email
+slug: /api/rest-api/@conjoon/rest-api-description/rest-api-email
 ---
 
 OpenAPI description for a REST API providing endpoints for accessing email messaging related services.

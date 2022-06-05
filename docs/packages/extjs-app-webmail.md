@@ -1,6 +1,7 @@
 ---
 id: extjs-app-webmail
 title: 📦 extjs-app-webmail
+slug: /api/packages/@conjoon/extjs-app-webmail
 ---
 
 [Application Package](/docs/packages/overview#application-packages) for providing the UI and client logic for a lightweight, feature-rich email client.

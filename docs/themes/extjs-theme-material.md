@@ -1,6 +1,7 @@
 ---
 id: extjs-theme-material
 title: 🎨 extjs-theme-material
+slug: /api/themes/@conjoon/extjs-theme-material
 ---
 
 [Theme](/docs/themes/overview) containing the material theme for **conjoon**.
