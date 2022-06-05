@@ -19,11 +19,10 @@ slug: /
 Install [Node.js](https://nodejs.org/en/download) and create a new **conjoon** site:
 
 ```bash
-npx create-conjoon@latest target_folder
+npx create-conjoon@latest
 ```
 
 Follow the instructions on screen.
-
 
 ```bash
 cd target_folder
