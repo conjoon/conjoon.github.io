@@ -30,7 +30,7 @@ $ ddev ssh
 You can then manually invoke the install process of composer:
 
 ```shell
-$ ddev ssh
+$ composer i
 ```
 
 ## Configuration
