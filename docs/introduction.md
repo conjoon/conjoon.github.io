@@ -16,7 +16,7 @@ slug: /
 
 ## Quick Start ⏱ {#quick-start}
 
-Install [Node.js](https://nodejs.org/en/download) and create a new **conjoon** site:
+Install [Node.js](https://nodejs.org/en/download) and [create](/docs/misc/create-conjoon.md) a new **conjoon** site:
 
 ```bash
 npx create-conjoon@latest
