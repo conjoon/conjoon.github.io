@@ -133,12 +133,30 @@ const sidebars = {
                 "configuration"
             ]
         },
+        /**
+         * +---------------------------
+         * |       Guides
+         * +---------------------------
+         */
         {
             type: "category",
             label: "Guides",
             link: {
                 type: "generated-index",
                 description: "Learn about the most important concepts of conjoon"
+            },
+            collapsed: true,
+            items: [
+                "guides/connectingbackends",
+                // "guides/usingtherestapitosendemailswithjavascript"
+            ]
+        },
+        {
+            type: "category",
+            label: "Advanced Guides",
+            link: {
+                type: "generated-index",
+                description: "Learn about advanced concepts of conjoon"
             },
             collapsed: true,
             items: [

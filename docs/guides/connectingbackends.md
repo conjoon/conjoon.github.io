@@ -1,8 +1,7 @@
 ---
-id: configurationdetails
-title: Configuration Details
-description: Configuration Details and defining Plugins
-slug: /advanced/configurationdetails
+id: connectingbackends
+title: Install & Connect Backends 
+description: How to install and connect Backends with conjoon
 ---
 
 :::tip

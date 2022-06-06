@@ -2,6 +2,7 @@
 id: servicelocator
 title: Using the Service Locator
 description: Registering services and using the Service Locator
+slug: /advanced/servicelocator
 ---
 
 
