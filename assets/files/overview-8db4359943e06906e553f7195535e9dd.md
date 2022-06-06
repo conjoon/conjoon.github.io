@@ -16,6 +16,6 @@ These backends are responsible for providing Email messaging functionality with 
 
 ## Container Images
 
-We provide container images for fast and easy setup of **conjoon** backends.
+We provide container images for fast and easy development of **conjoon** backends.
 
 - [@conjoon/ddev-ms-email](./ddev-ms-email.md)
