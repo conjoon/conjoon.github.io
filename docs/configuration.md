@@ -51,5 +51,5 @@ Plugins are divided into `application`- and `component`-plugins, and allow for a
 
 ## Further information
 :::info
-If you are interested in the internals of the configuration system and how it is used with conjoon, you can refer to [this guide](/docs/guides/configurationdetails).
+If you are interested in the internals of the configuration system and how it is used with conjoon, you can refer to [this guide](/docs/guides/configurationdetails.md).
 :::
