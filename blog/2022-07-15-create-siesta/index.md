@@ -44,4 +44,4 @@ in tests.
 | _The additional control made available by siesta-lib-helper allows for switching between the modern `M` and classic `C` toolkit and provides a list of timeout values that can be globally used with t.waitForMs() in tests._ |
 
 ## Documentation
-The documentation for `create-siesta` can be found [here](docs/api/misc/@coon-js/create-siesta), the sources are available with the [coon.js](https://github.com/coon-js) organization at **GitHub**, which provides a collection of useful tools for rapid **Sencha Ext JS** application development, and spawned from the **conjoon** open source project. 
+The documentation for `create-siesta` can be found [here](/docs/api/misc/@coon-js/create-siesta), the sources are available with the [coon.js](https://github.com/coon-js) organization at **GitHub**, which provides a collection of useful tools for rapid **Sencha Ext JS** application development, and spawned from the **conjoon** open source project. 
