@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconjoon=self.webpackChunkconjoon||[]).push([[3585],{1123:function(o){o.exports=JSON.parse('{"permalink":"/blog/tags/create-conjoon","page":1,"postsPerPage":5,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

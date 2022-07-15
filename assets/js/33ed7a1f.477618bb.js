@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkconjoon=self.webpackChunkconjoon||[]).push([[1597],{1918:function(a){a.exports=JSON.parse('{"label":"initializer","permalink":"/blog/tags/initializer","allTagsPath":"/blog/tags","count":1}')}}]);
