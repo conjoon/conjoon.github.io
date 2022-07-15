@@ -284,5 +284,5 @@ An array of arguments that get passed to the constructor of the plugin
 ## Further Reading
 
 :::info
-An in-depth look at the internals of **conjoon*'s configuration system can be found [here](/docs/guides/configurationdetails.md).
+An in-depth look at the internals of **conjoon*'s configuration system can be found [here](advanced/configurationdetails).
 :::

@@ -114,7 +114,10 @@ const sidebars = {
             type: "category",
             label: "Miscellaneous",
             collapsed: true,
-            items: ["misc/create-conjoon"]
+            items: [
+                "misc/create-conjoon",
+                "misc/create-siesta"
+            ]
         }
 
     ],
