@@ -6,7 +6,7 @@ tags: [update, installer, create-conjoon, npm, initializer]
 
 ## Easily create Siesta tests for your applications
 
-[Siesta](https://www.bryntum.com/products/siesta/) is a JavaScript unit and UI testing tool which allows for running tests for **Ext JS** (view-) components directly in the browser (or even headless in case you want to use it with your ci tools).
+[Siesta](https://www.bryntum.com/products/siesta/) is a JavaScript unit and UI testing tool which allows for running tests (for **Ext JS** (view-) components, amongst others) directly in the web browser (or  headless in case you want to use it with your ci tools).
 
 It is **conjoon**'s favorite among the various testing tools out there (we're also working with [Jest 🃏](https://jestjs.io/) when there's no **Ext JS** involved) and without it, it's clear that End-toEnd tests of some of the features and changes that have made it into **conjoon** would have slowed the project down due to their cyclic complexity - or even worse, make the software stuck in regression. 
 
