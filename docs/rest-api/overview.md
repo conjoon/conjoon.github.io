@@ -1,6 +1,6 @@
 ---
 id: overview
-title: REST API
+title: Backend API
 slug: /api/rest-api
 ---
 
