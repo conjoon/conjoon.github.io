@@ -37,7 +37,7 @@ The plugin can be enabled by adding an entry with the field `xclass` set to `con
         "extjs-app-webmail": {
             "plugins": {
                 "controller": [{
-                    "xclass": "conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin",
+                    "xclass": "conjoon.cn_mail.app.plugin.MailtoProtocolHandlerPlugin"
                 }]
             }    
         }
