@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconjoon=self.webpackChunkconjoon||[]).push([[3044],{4079:function(o){o.exports=JSON.parse('{"label":"major","permalink":"/blog/tags/major","allTagsPath":"/blog/tags","count":1}')}}]);
