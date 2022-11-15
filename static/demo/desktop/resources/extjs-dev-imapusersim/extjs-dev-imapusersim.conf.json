@@ -1,7 +1,0 @@
-{
-    "auth": {
-        "url": "https://ddev-ms-email.ddev.site/rest-imapuser/api/v.*?/auth(/.*)?",
-        "enabled": true,
-        "delay": 250
-    }
-}
