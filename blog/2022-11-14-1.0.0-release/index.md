@@ -17,12 +17,12 @@ It will let you select the latest release when opting for the version to install
 to [bugfixes, optimizations and minor features](https://github.com/orgs/conjoon/projects/3) across all projects where
 closed.
 
-This release focuses on providing a stable frontend in conjunction with [**lumen-app-email**](./docs/api/backends/@conjoon/lumen-app-email).
+This release focuses on providing a stable frontend in conjunction with [**lumen-app-email**](/docs/api/backends/@conjoon/lumen-app-email).
 
 Besides the features already introduced with the release candidates, the following features have been added:
 
 #### Plugins
- - Plugin [**mail-internal-mailtohandler**](./docs/api/plugins/@conjoon/extjs-app-webmail/mail-internal-mailtohandler): 
+ - Plugin [**mail-internal-mailtohandler**](/docs/api/plugins/@conjoon/extjs-app-webmail/mail-internal-mailtohandler): 
 Plugin for registering conjoon as the protocol handler for `mailto`-links
 
 ![](./img/mailtoprotocolhandler_2.png)
@@ -35,13 +35,13 @@ an instance of **lumen-app-email** running, use
 $ composer create-project conjoon/lumen-app-email {targetDir} {version}
 ```
 
-which will start the installation process. For more information, refer to the [**official guide**](./docs/api/backends/@conjoon/lumen-app-email#installation-1).
+which will start the installation process. For more information, refer to the [**official guide**](/docs/api/backends/@conjoon/lumen-app-email#installation-1).
 
 ![](./img/lumen-installer.png)
 
 #### Docker Container
 
-[**ddev-ms-email**](./docs/api/backends/@conjoon/ddev-ms-email) has been updated to utilize the installer of **lumen-app-email**
+[**ddev-ms-email**](/docs/api/backends/@conjoon/ddev-ms-email) has been updated to utilize the installer of **lumen-app-email**
 and additionally provides integration options for **conjoon** so that the container can be used for serving both the backend
 and the frontend. 
 
@@ -49,6 +49,6 @@ and the frontend.
 $ ddev create-conjoon
 ```
 
-will start the installation of **conjoon**.  For more information, refer to the [**official guide**](./docs/api/backends/@conjoon/ddev-ms-email).
+will start the installation of **conjoon**.  For more information, refer to the [**official guide**](/docs/api/backends/@conjoon/ddev-ms-email).
 
 
