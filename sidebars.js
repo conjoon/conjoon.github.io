@@ -120,7 +120,8 @@ const sidebars = {
             collapsed: true,
             items: [
                 "misc/create-conjoon",
-                "misc/create-siesta"
+                "misc/create-siesta",
+                "misc/delorean"
             ]
         }
 
