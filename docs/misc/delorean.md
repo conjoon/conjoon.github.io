@@ -3,9 +3,35 @@ slug: /api/misc/@coon-js/delorean
 ---
 
 # 📦 delorean
-Tool for transpiling modern ECMAScript to ES5 in Sencha Ext JS CI/CD pipelines  .
 
-Allows for using modern ECMAScript and converting to ES versions the Closure Compiler bundled with Sencha CMD understands.
+ECMAScript transpilation layer for Sencha CMD / Ext JS.
+
+Allows for using modern ECMAScript in your source code. Will transpile to ES versions Sencha CMD and its baked in 
+Closure Compiler understands.
+
+Makes it possible to use 
+ - the nullish coalescing operator
+ - the optional chaining operator 
+ - destructuring assignment syntax 
+
+without breaking builds created with Sencha CMD:
+
+````javascript
+const foo = null ?? "default string";
+
+const fn = ([x, y, z]) => ({x, y, z});
+
+const adventurer = {
+    name: "Alice",
+    cat: {
+        name: "Dinah"
+    }
+};
+
+const dogName = adventurer.dog?.name;
+````
+
+
 
 ## Installation
 
