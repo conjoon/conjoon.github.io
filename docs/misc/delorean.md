@@ -42,7 +42,7 @@ $ npm i --save-dev @coon-js/delorean
 ``` 
 
 ## How it works
-**@coon-js/delorean** is an npm tool that provides an additional transpiling layer on top of Sencha CMD with the help of
+**@coon-js/delorean** is an npm tool that provides an additional transpilation layer on top of Sencha CMD with the help of
 [**Babel**](httpy://babel.dev).
 
 ![](https://raw.githubusercontent.com/coon-js/delorean/main/delorean_pipeline.png)
