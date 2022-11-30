@@ -121,11 +121,14 @@ point to **this** folder as the sources root (see [configuration](#configuration
 ### `--revert, -r`
 Reverts the changes made to the configuration files.
 
+### `--config, -c`
+Path to the config file to use, defaults to `./.deloreanrc.json`
+
 ### `--help, -h`
 Show the **help** screen.
 
 ## Configuration
-#### `.deloreanrc.json`
+### `.deloreanrc.json`
 The configuration file required by **delorean**.
 Contains options for setting JSON-keys available with Sencha's Ext JS `package.json` / `app.json` that should be used
 for determining the JavaScript-source files for transpiling.
@@ -141,8 +144,12 @@ for determining the JavaScript-source files for transpiling.
     "toolkits": [
       "modern", "classic"
     ],
-    "build": [
+    "builds": [
       "desktop", "shared"
+    ],
+    "externals": [
+      "./node_modules/@lib/externalpackage",
+      "./packages/local/math"
     ]
 }
 ```
@@ -164,14 +171,21 @@ Holds the values that should be used when evaluating strings containing template
 With `toolkits` set to `["modern", "classic"]`, the directories `modern/src` and `classic/src` will be considered
 when collecting source files for transpiling.
 
-#### `build`
+#### `builds`
 - Type: `Array`
 
 Holds the values that should be used when evaluating strings containing templates, such as `app/${build.id}/overrides`.
 With `build` set to `["desktop", "shared"]`, the directories `app/desktop/overrides` and `app/shared/overrides` will be considered
 when collecting source files for transpiling.
 
-#### `.babelrc`
+#### `externals`
+- Type: `Array`
+
+Paths to external packages that should be processed with this run of **delorean**. This is useful if you have a project
+consisting of additional external Ext JS packages that require transpilation before they get merged into a build. Please
+note, that the external packages need to have **delorean** installed and configured.
+
+### `.babelrc`
 The configuration file required by **Babel**
 The `.babelrc` is the configuration file for **Babel** and has default options known to
 work with Sencha Ext JS projects >= 7.4. Adjust to your needs. See [the documentation](https://babeljs.io/)
