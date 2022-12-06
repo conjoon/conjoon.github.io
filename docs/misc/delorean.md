@@ -114,6 +114,13 @@ will revert the changes made to the `app.json` / `package.json`:
 
 ## Command Line Options
 
+### `--config, -c`
+Path to the config file to use, defaults to `./.deloreanrc.json`
+
+### `--dir, -d`
+Target directory relative to the directory where **delorean** was invoked, and  where the Sencha Ext JS App/the
+Package is located. Defaults to `./`
+
 ### `--prepare, -p`
 Prepares the `.deloreanbuild` folder, adds transpiled sources to it and update the project file so that particular entries
 point to **this** folder as the sources root (see [configuration](#configuration)).
@@ -121,8 +128,9 @@ point to **this** folder as the sources root (see [configuration](#configuration
 ### `--revert, -r`
 Reverts the changes made to the configuration files.
 
-### `--config, -c`
-Path to the config file to use, defaults to `./.deloreanrc.json`
+### `--sanitize, -s`
+Sanitizes JSON and allows for reading in files that contain comments. **Warning:** This will produce valid JSON for write-operations,
+so existing comments will get lost on the way.
 
 ### `--help, -h`
 Show the **help** screen.
