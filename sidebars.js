@@ -169,6 +169,7 @@ const sidebars = {
             collapsed: true,
             items: [
                 "guides/configurationdetails",
+                "guides/dependencyinjection",
                 "guides/servicelocator"
             ]
         },
