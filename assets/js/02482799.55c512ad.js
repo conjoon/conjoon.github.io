@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconjoon=self.webpackChunkconjoon||[]).push([[2323],{3978:function(n){n.exports=JSON.parse('{"label":"dependency injection","permalink":"/blog/tags/dependency-injection","allTagsPath":"/blog/tags","count":1}')}}]);

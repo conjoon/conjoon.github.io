@@ -2,12 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://conjoon.org/blog</id>
     <title>conjoon Blog</title>
-    <updated>2022-11-14T00:00:00.000Z</updated>
+    <updated>2022-12-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://conjoon.org/blog"/>
     <subtitle>conjoon Blog</subtitle>
     <icon>https://conjoon.org/img/favicon.ico</icon>
     <rights>Copyright © 2022 conjoon Open Source Project</rights>
+    <entry>
+        <title type="html"><![CDATA[conjoon 1.0.4]]></title>
+        <id>/2022/12/17/1.0.4-release</id>
+        <link href="https://conjoon.org/blog/2022/12/17/1.0.4-release"/>
+        <updated>2022-12-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[🎄 We're happy to announce conjoon 1.0.4, an interim release that brings Dependency Injection to conjoon.]]></summary>
+        <content type="html"><![CDATA[<p>🎄 We're happy to announce <strong>conjoon 1.0.4</strong>, an interim release that brings <em>Dependency Injection</em> to <strong>conjoon</strong>.</p><p>Paving the way for <a href="https://github.com/orgs/conjoon/projects/6" target="_blank" rel="noopener noreferrer"><strong>conjoon 1.1.0</strong></a> that targets support for runtime-replacable plugins, Dependeny Injection allows for a more supple integration of functionality for  application instances.</p><p>If you're interested in how our <em>Inversion of Control</em>-Container works in <strong>conjoon</strong>, have a look <a href="/docs/advanced/dependencyinjection">at this article</a>.</p><p>The functionality has been refactored into <a href="https://github.com/coon-js/extjs-lib-core/tree/main/src/ioc" target="_blank" rel="noopener noreferrer"><strong>coon.core.ioc</strong></a>, so if your Ext JS application is in the need of a simple yet powerful and flexible IoC-Container, you're good to go!</p><p> 🔔 Happy Holidays! ❄️</p>]]></content>
+        <author>
+            <name>Thorsten Suckow-Homberg</name>
+            <email>thorsten@suckow-homberg.de</email>
+            <uri>http://twitter.com/ThorstenSuckow</uri>
+        </author>
+        <category label="update" term="update"/>
+        <category label="interim release" term="interim release"/>
+        <category label="patch" term="patch"/>
+        <category label="dependency injection" term="dependency injection"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[conjoon 1.0]]></title>
         <id>/2022/11/14/1.0.0-release</id>

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconjoon=self.webpackChunkconjoon||[]).push([[2],{6455:function(e){e.exports=JSON.parse('{"label":"interim release","permalink":"/blog/tags/interim-release","allTagsPath":"/blog/tags","count":1}')}}]);
