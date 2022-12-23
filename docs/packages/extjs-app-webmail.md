@@ -144,7 +144,8 @@ and appearance of the email client:
         "editor": "resources/templates/html/editor.html.tpl",
         "reader": "resources/templates/html/reader.html.tpl"
       }
-    }
+    },
+    "mailServerPresets": "resources/mailserverpresets.conf.json"
   },
   "service": {
     "rest-api-email": {
@@ -182,6 +183,48 @@ An html-template to use with the message editor.
  - Type: `String` 
 
 An html-template to use with the message reader.
+
+#### `mailServerPresets`
+- Type: `String`
+
+The URI of the file containing the mailserver presets used with the **MailAccountWizard**. The file must contain an array as the top-level object, 
+containing objects representing configurations used with **MailAccount**s.
+
+<details>
+<summary>mailserverpreset.json.conf: </summary>
+
+```json 
+[{
+  "name": "AOL",
+  "displayName": "AOL",
+  "img": "resources/images/mailprovider/aol.svg",
+  "config": {
+    "inbox_type": "IMAP",
+    "inbox_address": "imap.aol.com",
+    "inbox_port": 993,
+    "inbox_ssl": true,
+    "outbox_address":  "smtp.aol.com",
+    "outbox_port": 465,
+    "outbox_secure": "ssl",
+    "root": []
+  }
+}, {
+   "name": "Domain Factory",
+   "config": {
+     "inbox_type": "IMAP",
+     "inbox_address": "sslin.df.eu",
+     "inbox_port": 993,
+     "inbox_ssl": true,
+     "outbox_address":  "smtprelaypool.ispgateway.de",
+     "outbox_port": 465,
+     "outbox_secure": "ssl",
+     "root": ["INBOX"]
+   }
+}]
+```
+</details>
+
+```json ```
 
 #### `service`
 - Type: `Object`
