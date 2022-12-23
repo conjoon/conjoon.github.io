@@ -194,7 +194,7 @@ The URI of the file containing the mailserver presets used with the **MailAccoun
 containing objects representing configurations used with **MailAccount**s.
 
 <details>
-<summary>mailserverpreset.json.conf: </summary>
+<summary>mailserverpresets.json.conf:</summary>
 
 ```json 
 [{
