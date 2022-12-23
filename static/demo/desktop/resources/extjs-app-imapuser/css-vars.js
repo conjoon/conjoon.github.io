@@ -5059,82 +5059,6 @@ var Bool = Types.Bool,
 
 	Fashion.css.register(function(__rt) {
 __rt.register({
-    rgba:  function (red, green, blue, alpha, color) {
-                var colorInst;
-
-                if (!!red && !!color) {
-                    Fashion.raise("Unsupported arguments to RGBA");
-                }
-
-                if (color && !red) {
-                    if (color.$isFashionColor) {
-                        colorInst = color;
-                    } else {
-                        Fashion.raise("Unsupported arguments to RGBA");
-                    }
-                } else if (red && red.$isFashionColor) {
-                    colorInst = red;
-                }
-
-                if (colorInst) {
-                    alpha = green || alpha;
-                    colorInst = colorInst.getRGBA();
-                    red = new Numeric(colorInst.r);
-                    green = new Numeric(colorInst.g);
-                    blue = new Numeric(colorInst.b);
-                }
-
-                if (!red || !red.$isFashionNumber) {
-                    if (red == null || red.$isFashionNull) {
-                        return Literal.Null;
-                    }
-                    Fashion.raise(red + ' is not a number for \'rgba\' red');
-                }
-                if (!green || !green.$isFashionNumber) {
-                    if (green == null || green.$isFashionNull) {
-                        return Literal.Null;
-                    }
-                    Fashion.raise(green + ' is not a number for \'rgba\' green');
-                }
-                if (!blue || !blue.$isFashionNumber) {
-                    if (blue == null || blue.$isFashionNull) {
-                        return Literal.Null;
-                    }
-                    Fashion.raise(blue + ' is not a number for \'rgba\' blue');
-                }
-                if (!alpha || !alpha.$isFashionNumber) {
-                    if (alpha == null || alpha.$isFashionNull) {
-                        return Literal.Null;
-                    }
-                    Fashion.raise(alpha + ' is not a number for \'rgba\' alpha');
-                }
-
-                if (red.unit == '%') {
-                    red = new Numeric(Color.constrainPercentage(red.value) / 100 * 255);
-                } else if (red.value !== Color.constrainChannel(red.value)) {
-                    Fashion.raise('Color value ' + red + ' must be between 0 and 255 inclusive for \'rgba\'');
-                }
-
-                if (green.unit == '%') {
-                    green = new Numeric(Color.constrainPercentage(green.value) / 100 * 255);
-                } else if (green.value !== Color.constrainChannel(green.value)) {
-                    Fashion.raise('Color value ' + green + ' must be between 0 and 255 inclusive for \'rgba\'');
-                }
-
-                if (blue.unit == '%') {
-                    blue = new Numeric(Color.constrainPercentage(blue.value) / 100 * 255);
-                } else if (blue.value !== Color.constrainChannel(blue.value)) {
-                    Fashion.raise('Color value ' + blue + ' must be between 0 and 255 inclusive for \'rgba\'');
-                }
-
-                if (alpha.unit == '%') {
-                    alpha = new Numeric(Color.constrainPercentage(alpha.value) / 100);
-                } else if (alpha.value !== Color.constrainAlpha(alpha.value)) {
-                    Fashion.raise('Alpha channel ' + alpha + ' must be between 0 and 1 inclusive for \'rgba\'');
-                }
-
-                return new ColorRGBA(red.value, green.value, blue.value, alpha.value);
-            },
     rgb:  function (red, green, blue, color) {
                 return this.rgba(red, green, blue, new Numeric(1), color);
             }
@@ -5337,49 +5261,25 @@ var __rt_context = __rt.context,
     __rt_extenders = __rt.extenders,
     __rt__scopeStack = __rt._scopeStack;
 __rt_setDynamic("$dark_mode", __rt_getGlobalDefault("$dark_mode") || __False, 0);
-__rt_setDynamic("$lazyload-grad-color1", __rt_getGlobalDefault("$lazyload_grad_color1") || (__rt_test(__rt_get("$dark_mode")) ? __rt_box(__rt_registered.rgba.apply(__rt.registered, __rt_applySpreadArgs([
-    __ColorRGBA.fromHex("#ffffff"), 
-    new __Numeric(0), 
-    __udf, 
-    __udf, 
-    __udf]))) : __rt_box(__rt.registered.rgba.apply(__rt.registered, __rt_applySpreadArgs([
-    __ColorRGBA.fromHex("#000000"), 
-    new __Numeric(0), 
-    __udf, 
-    __udf, 
-    __udf])))), 1);
-__rt_setDynamic("$lazyload-grad-color2", __rt_getGlobalDefault("$lazyload_grad_color2") || (__rt_test(__rt_get("$dark_mode")) ? __rt_box(__rt.registered.rgba.apply(__rt.registered, __rt_applySpreadArgs([
-    __ColorRGBA.fromHex("#ffffff"), 
-    new __Numeric(0.14), 
-    __udf, 
-    __udf, 
-    __udf]))) : __rt_box(__rt.registered.rgba.apply(__rt.registered, __rt_applySpreadArgs([
-    __ColorRGBA.fromHex("#000000"), 
-    new __Numeric(0.14), 
-    __udf, 
-    __udf, 
-    __udf])))), 2);
-__rt_setDynamic("$signal-color", __rt_getGlobalDefault("$signal_color") || (__rt_test(__rt_get("$dark_mode")) ? __ColorRGBA.fromHex("#d4f400") : __ColorRGBA.fromHex("#ff4500")), 3);
-__rt_setDynamic("$signal-color-alt", __rt_getGlobalDefault("$signal_color_alt") || (__rt_test(__rt_get("$dark_mode")) ? __ColorRGBA.fromHex("#ff4398") : __ColorRGBA.fromHex("#ff4398")), 4);
-__rt_setDynamic("$warning-background-color", __rt_getGlobalDefault("$warning_background_color") || __rt_box(__rt.registered.rgb.apply(__rt.registered, __rt_applySpreadArgs([
+__rt_setDynamic("$signal-color", __rt_getGlobalDefault("$signal_color") || (__rt_test(__rt_get("$dark_mode")) ? __ColorRGBA.fromHex("#d4f400") : __ColorRGBA.fromHex("#ff4500")), 1);
+__rt_setDynamic("$signal-color-alt", __rt_getGlobalDefault("$signal_color_alt") || (__rt_test(__rt_get("$dark_mode")) ? __ColorRGBA.fromHex("#ff4398") : __ColorRGBA.fromHex("#ff4398")), 2);
+__rt_setDynamic("$warning-background-color", __rt_getGlobalDefault("$warning_background_color") || __rt_box(__rt_registered.rgb.apply(__rt.registered, __rt_applySpreadArgs([
     new __Numeric(255), 
     new __Numeric(178), 
     new __Numeric(66), 
-    __udf]))), 5);
+    __udf]))), 3);
 __rt_setDynamic("$warning-color", __rt_getGlobalDefault("$warning_color") || __rt_box(__rt.registered.rgb.apply(__rt.registered, __rt_applySpreadArgs([
     new __Numeric(255), 
     new __Numeric(255), 
     new __Numeric(255), 
-    __udf]))), 6);
-__rt_setDynamic("$info-background-color", __rt_getGlobalDefault("$info_background_color") || __ColorRGBA.fromHex("#b91cff"), 7);
-__rt_setDynamic("$info-color", __rt_getGlobalDefault("$info_color") || __ColorRGBA.fromHex("#ffffff"), 8);
-__rt_setDynamic("$success-background-color", __rt_getGlobalDefault("$success_background_color") || __ColorRGBA.fromHex("#a2ff00"), 9);
-__rt_setDynamic("$success-color", __rt_getGlobalDefault("$success_color") || __ColorRGBA.fromHex("#000000"), 10);
+    __udf]))), 4);
+__rt_setDynamic("$info-background-color", __rt_getGlobalDefault("$info_background_color") || __ColorRGBA.fromHex("#b91cff"), 5);
+__rt_setDynamic("$info-color", __rt_getGlobalDefault("$info_color") || __ColorRGBA.fromHex("#ffffff"), 6);
+__rt_setDynamic("$success-background-color", __rt_getGlobalDefault("$success_background_color") || __ColorRGBA.fromHex("#a2ff00"), 7);
+__rt_setDynamic("$success-color", __rt_getGlobalDefault("$success_color") || __ColorRGBA.fromHex("#000000"), 8);
 },
  {
 	":root": [
-		"lazyload-grad-color1",
-		"lazyload-grad-color2",
 		"signal-color",
 		"signal-color-alt",
 		"warning-background-color",

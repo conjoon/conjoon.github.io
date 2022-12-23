@@ -198,6 +198,64 @@ An array containing an arbitrary number of entries to be passed to the construct
 `Services` resolved by the `ServiceLocator` are shared instances.
 :::
 
+### `ioc` {#ioc}
+
+- Type: `Object`
+
+An object providing information for the _Inversion of Control_-Container used in **conjoon**.
+
+```json title="conjoon.conf.json" 
+{
+  "conjoon": {
+    "ioc": {
+      "bindings": {
+        "conjoon.dev.cn_mailsim": {
+          "conjoon.dev.cn_mailsim.data.SimletAdapter": "conjoon.cn_imapuser.dev.BasicAuthSimletAdapter"
+        },
+        "conjoon.cn_mail": {
+          "coon.core.data.request.Configurator": "conjoon.cn_imapuser.data.request.Configurator"
+        }
+      }
+    }
+  }
+}
+```
+
+#### `bindings`
+- Type: `object`
+
+Object that maps concrete implementations for (abstract) interfaces or classes. This configuration can also be utilized by packages that provide configuration information for the application instance they're used with. Bindings found in the application configuration are given precedence
+and override equal package-specific bindings.
+
+Bindings are generally introduced with their class name or the namespace for which the binding gets realized. This key then holds an object of the _TYPES_ that are replaced with the _CONCRETE_:
+
+```json
+{
+    "ioc": {
+        "bindings": {
+            "CLASS_OR_NAMESPACE": {
+                "TYPE": "CONCRETE"
+            }
+        }    
+    }
+}
+```
+
+The above configuration reads as follows:
+
+```
+    when CLASS_OR_NAMESPACE 
+        needs TYPE
+        give CONCRETE
+```
+
+The class with the particular name or owned by that namespace must be configured
+with _meta-information_ so it is recognized as _injectable_.
+
+:::note
+See [this article](/docs/advanced/dependencyinjection) for examples and  information on Dependency Injection in **conjoon**.
+:::
+
 ### `plugins` {#plugins}
  - Type: `Object`
 
@@ -284,5 +342,5 @@ An array of arguments that get passed to the constructor of the plugin
 ## Further Reading
 
 :::info
-An in-depth look at the internals of **conjoon*'s configuration system can be found [here](/docs/guides/configurationdetails.md).
+An in-depth look at the internals of **conjoon*'s configuration system can be found [here](advanced/configurationdetails).
 :::

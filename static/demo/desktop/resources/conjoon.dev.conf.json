@@ -59,6 +59,9 @@
                     ],
                     "controller": [
                         {
+                            "xclass": "conjoon.cn_mail.app.plugin.MailtoProtocolHandlerPlugin"
+                        },
+                        {
                             "xclass": "conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin",
                             "args": [
                                 {
@@ -88,21 +91,31 @@
                 },
                 "service": {
                     "rest-api-email": {
-                        "base": "https://ddev-ms-email.ddev.site/rest-api-email/api/v0/"
+                        "base": "https://ddev-ms-email.ddev.site/rest-api-email/v0/"
                     }
                 }
             }
-            }
-        ,
+            },
+
             "extjs-app-imapuser": {
                 "autoLoad": {
                     "registerController": true
                 },
                 "config": {
                     "title": "Login",
+                    "ioc": {
+                        "bindings": {
+                            "conjoon.dev.cn_mailsim": {
+                                "conjoon.dev.cn_mailsim.data.SimletAdapter": "conjoon.cn_imapuser.dev.BasicAuthSimletAdapter"
+                            },
+                            "conjoon.cn_mail": {
+                                "coon.core.data.request.Configurator": "conjoon.cn_imapuser.data.request.Configurator"
+                            }
+                        }
+                    },
                     "service": {
                         "rest-imapuser": {
-                            "base": "https://ddev-ms-email.ddev.site/rest-imapuser/api/v0"
+                            "base": "https://ddev-ms-email.ddev.site/rest-imapuser/v0"
                         }
                     }
                 }
@@ -113,7 +126,7 @@
                 },
                 "config": {
                     "auth": {
-                        "url": "https://ddev-ms-email.ddev.site/rest-imapuser/api/v.*?/auth(/.*)?",
+                        "url": "https://ddev-ms-email.ddev.site/rest-imapuser/v.*?/auth(/.*)?",
                         "enabled": true,
                         "delay": 250
                     }
@@ -125,22 +138,22 @@
                 },
                 "config": {
                     "attachment": {
-                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/api/v.*?/MailAccounts/(.+)/MailFolders/(.+)/MessageItems/(.+)/Attachments(/.*)?",
+                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/v.*?/MailAccounts/(.+)/MailFolders/(.+)/MessageItems/(.+)/Attachments(/.*)?",
                         "enabled": true,
                         "delay": 250
                     },
                     "messageItem": {
-                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/api/v.*?/MailAccounts/(.+)/MailFolders/(.+)/MessageItems(/.*)?",
+                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/v.*?/MailAccounts/(.+)/MailFolders/(.+)/Message(Items|Bodies)(/.*)?",
                         "enabled": true,
                         "delay": 250
                     },
                     "mailFolder": {
-                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/api/v.*?/MailAccounts/(.+)/MailFolders(/.*)?",
+                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/v.*?/MailAccounts/(.+)/MailFolders(/.*)?",
                         "enabled": true,
                         "delay": 250
                     },
                     "mailAccount": {
-                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/api/v.*?/MailAccounts(/d+)?",
+                        "url": "https://ddev-ms-email.ddev.site/rest-api-email/v.*?/MailAccounts(/d+)?",
                         "enabled": true,
                         "delay": 250
                     }

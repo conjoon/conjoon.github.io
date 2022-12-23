@@ -34,3 +34,4 @@ Plugins registered for view components.
 Plugins registered with `PackageController`s.
 
 - [@conjoon/extjs-app-webmail#**mail-internal-newmessages**](./mail-internal-newmessages.md) 🥷  
+- [@conjoon/extjs-app-webmail#**mail-internal-mailtohandler**](./mail-internal-mailtohandler.md) 🥷  

@@ -1,10 +1,10 @@
 ---
 id: overview
-title: REST API
+title: Backend API
 slug: /api/rest-api
 ---
 
-We provide official REST APIs for **conjoon**.
+We provide official Backend APIs for **conjoon**.
 
 ## rest-api-email
 

@@ -63,6 +63,7 @@ const sidebars = {
                 "plugins/app-internal-desktopquotes",
                 "plugins/mail-internal-previewtext",
                 "plugins/mail-internal-newmessages",
+                "plugins/mail-internal-mailtohandler",
                 "plugins/theme-internal-modeswitch"
             ]
         },
@@ -100,10 +101,13 @@ const sidebars = {
          */
         {
             type: "category",
-            label: "REST API",
+            label: "Backend API",
             collapsed: true,
             link: {type: "doc", id: "rest-api/overview"},
-            items: ["rest-api/rest-api-email"]
+            items: [
+                "rest-api/rest-api-email",
+                "rest-api/relfield"
+            ]
         },
         /**
          * +---------------------------
@@ -114,7 +118,11 @@ const sidebars = {
             type: "category",
             label: "Miscellaneous",
             collapsed: true,
-            items: ["misc/create-conjoon"]
+            items: [
+                "misc/create-conjoon",
+                "misc/create-siesta",
+                "misc/delorean"
+            ]
         }
 
     ],
@@ -161,6 +169,7 @@ const sidebars = {
             collapsed: true,
             items: [
                 "guides/configurationdetails",
+                "guides/dependencyinjection",
                 "guides/servicelocator"
             ]
         },

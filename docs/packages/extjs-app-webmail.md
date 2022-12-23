@@ -119,6 +119,9 @@ and appearance of the email client:
     ],
     "controller": [
       {
+        "xclass": "conjoon.cn_mail.app.plugin.MailtoProtocolHandlerPlugin"
+      },
+      {
         "xclass": "conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin",
         "args": [
           {
@@ -236,10 +239,11 @@ Section for specifying [component](/docs/plugins/overview.md#component-plugins) 
 
 This package comes pre-configured with the following component plugins:
 
- - `conjoon.cn_mail.view.mail.message.grid.feature.PreviewTextLazyLoad`<br />A plugin for lazy loading email message preview texts in the grid, making sure that envelope information of available messages are loaded and rendered first. You can find more about it [here](/docs/plugins/mail-internal-previewtext.md).
+ - [`conjoon.cn_mail.view.mail.message.grid.feature.PreviewTextLazyLoad`](/docs/api/plugins/@conjoon/extjs-app-webmail/mail-internal-previewtext)<br />A plugin for lazy loading email message preview texts in the grid, making sure that envelope information of available messages are loaded and rendered first. You can find more about it [here](/docs/plugins/mail-internal-previewtext.md).
 
 
 This package comes pre-configured with the following controller plugins:
 
- -  `conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin`<br />A plugin for automatically querying mailboxes for new messages. Plays notification sounds when new messages have been received. If allowed by the user, desktop notifications are shown for new messages, too. The default interval for looking up new messages is set to 240000 ms. [Sounds](#newEmail-sound) and [images](#newEmail-image) can be configured to be used with this plugin. You can find more about it [here](/docs/plugins/mail-internal-newmessages.md).
-
+ -  [`conjoon.cn_mail.app.plugin.NewMessagesNotificationPlugin`](/docs/api/plugins/@conjoon/extjs-app-webmail/mail-internal-newmessages)<br />A plugin for automatically querying mailboxes for new messages. Plays notification sounds when new messages have been received. If allowed by the user, desktop notifications are shown for new messages, too. The default interval for looking up new messages is set to 240000 ms. [Sounds](#newEmail-sound) and [images](#newEmail-image) can be configured to be used with this plugin. You can find more about it [here](/docs/plugins/mail-internal-newmessages.md).
+ -  [`conjoon.cn_mail.app.plugin.MailtoProtocolHandlerPlugin`](/docs/api/plugins/@conjoon/extjs-app-webmail/mail-internal-mailtohandler)<br /> A plugin for registering **extjs-app-webmail**
+  as a [protocol handler](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/registerProtocolHandler/Web-based_protocol_handlers) for `mailto`-links.

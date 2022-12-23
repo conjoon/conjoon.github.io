@@ -29,7 +29,7 @@
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 const allDocHomesPaths = [
-    '/docs/'
+    "/docs/"
 ];
 
 /** @type {import('@docusaurus/types').Config} */
@@ -47,12 +47,11 @@ const config = {
     organizationName: "conjoon", // Usually your GitHub org/user name.
     projectName: "conjoon", // Usually your repo name.
 
-    plugins:    [[
-            'client-redirects',
+    plugins: [[
+        "@docusaurus/plugin-client-redirects",
         /** @type {import('@docusaurus/plugin-client-redirects').Options} */
-        ({
-            fromExtensions: ['html'],
-            createRedirects(routePath) {
+        {
+            createRedirects (routePath) {
                 // Redirect to /docs from /docs/introduction, as introduction has been
                 // made the home doc
                 if (allDocHomesPaths.includes(routePath)) {
@@ -60,7 +59,7 @@ const config = {
                 }
                 return [];
             }
-        })]
+        }]
     ],
 
     presets: [
@@ -80,19 +79,19 @@ const config = {
                 },
                 blog: {
                     // routeBasePath: '/',
-                    path: 'blog',
+                    path: "blog",
                     editUrl: ({locale, blogDirPath, blogPath}) => {
                         return `https://github.com/conjoon/conjoon.github.io/edit/main/${blogDirPath}/${blogPath}`;
                     },
                     postsPerPage: 5,
                     feedOptions: {
-                        type: 'all',
-                        copyright: `Copyright © ${new Date().getFullYear()} conjoon Open Source Project`,
+                        type: "all",
+                        copyright: `Copyright © ${new Date().getFullYear()} conjoon Open Source Project`
                     },
-                    blogSidebarCount: 'ALL',
-                    blogSidebarTitle: 'All our posts',
-                },
-            }),
+                    blogSidebarCount: "ALL",
+                    blogSidebarTitle: "All our posts"
+                }
+            })
 
         ]
     ],
@@ -126,7 +125,7 @@ const config = {
                     label: "API"
 
                 },
-                {to: 'blog', label: 'Blog', position: 'left'},
+                {to: "blog", label: "Blog", position: "left"},
                 {to: "demo/index.html", target: "demo", label: "Demo", position: "left"},
                 {
                     href: "https://github.com/conjoon",

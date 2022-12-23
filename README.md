@@ -1,4 +1,4 @@
-# @conjoon/conjoon.github.ui
+# @conjoon/conjoon.github.io
 
 Welcome to the repo for the conjoon-website. This is the source for https://conjoon.github.io
 
