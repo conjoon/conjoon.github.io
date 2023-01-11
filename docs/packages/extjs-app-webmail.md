@@ -10,7 +10,8 @@ This package supports [rest-api-email](/docs/rest-api/rest-api-email.md) for IMA
 
 ## Use this package, if you...
 - want to manage multiple mail accounts in a single browser instance
-- are using [lumen-app-email](docs/backends/lumen-app-email.md)
+- are using [lumen-app-email](docs/backends/lumen-app-email.md) with the [`single-imap-user`](/docs/backends/lumen-app-email.md#configureapi) Authentication Provider.
+
 
 ### Requirements
 This package requires a service that complies with the REST API described in `rest-api-email` which can be found in the [REST API description](https://github.com/conjoon/rest-api-description) of the **conjoon**-project.
@@ -193,6 +194,13 @@ An html-template to use with the message reader.
 The URI of the file containing the mailserver presets used with the **MailAccountWizard**. The file must contain an array as the top-level object, 
 containing objects representing configurations used with **MailAccount**s.
 
+:::info
+The **MailAccountWizard** is not available when the client is configured to retrieve mailserver configuration
+from the backend, e.g. the [**extjs-app-imapuser**](/docs/api/packages/@conjoon/extjs-app-imapuser)-package disabled
+the **MailAccountWizard**.
+The **MailAccountWizard** is enabled when **conjoon** is used with the [**extjs-app-localmailaccount**](/docs/api/packages/@conjoon/extjs-app-localmailaccount)-package.
+:::
+
 <details>
 <summary>mailserverpresets.json.conf:</summary>
 
@@ -209,7 +217,7 @@ containing objects representing configurations used with **MailAccount**s.
     "outbox_address":  "smtp.aol.com",
     "outbox_port": 465,
     "outbox_secure": "ssl",
-    "root": []
+    "subscriptions": []
   }
 }, {
    "name": "Domain Factory",
@@ -221,13 +229,15 @@ containing objects representing configurations used with **MailAccount**s.
      "outbox_address":  "smtprelaypool.ispgateway.de",
      "outbox_port": 465,
      "outbox_secure": "ssl",
-     "root": ["INBOX"]
+     "subscriptions": ["INBOX"]
    }
 }]
 ```
+
+
+
 </details>
 
-```json ```
 
 #### `service`
 - Type: `Object`

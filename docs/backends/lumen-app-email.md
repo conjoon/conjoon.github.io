@@ -30,13 +30,11 @@ Services are easily replacable with the help of upfront DI configurations and re
 
 **Use lumen-app-email, if you...**
 - need a fully functional middleware for communicating with IMAP / SMTP servers
-- want to provide webmail solutions with domain-specific sign-in to IMAP accounts
-- are looking for a distribution with minimal footprint and easy setup
-- require a headless, service oriented standalone application with your infrastructure
-
-**do not use lumen-app-email, if you...**
-- are looking for a stateful, session based webmail backend
-- need baked-in caching
+- want to provide webmail solutions with various authentication methods, such as
+    - domain-specific sign-in to IMAP accounts, orchestrated by the server
+    - connecting to IMAP accounts solely configured by the users
+- are looking for an email messaging solution with minimal footprint that's easy to distribute
+- require a headless, service oriented standalone application in your infrastructure that can also be run frontend agnostic
 
 ## API Examples
 
@@ -93,13 +91,13 @@ to get a list of all commands available with this installation.
 #### Commands
 The following CLI commands are available for an instance of **lumen-app-email**:
 
-| Command                        | Description                                                                                                          | 
-|--------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [install](#install)            | Starts the installation process                                                                                      |
-| [configure:url](#configureurl) | Configure URL where this instance is available                                                                       |
-| [configure:api](#configureapi) | Configure API paths                                                                                                  | 
-| [configure:env](#configureenv)        | Specify the environment this instance runs in                                                                        | 
-| [configure:debug](#configuredebug)    | Enable or disable debug mode                                                                                         | 
+| Command                        | Description                                                    | 
+|--------------------------------|----------------------------------------------------------------|
+| [install](#install)            | Starts the installation process                                |
+| [configure:url](#configureurl) | Configure URL where this instance is available                 |
+| [configure:api](#configureapi) | Configure API paths and Auth Providers                         | 
+| [configure:env](#configureenv)        | Specify the environment this instance runs in                  | 
+| [configure:debug](#configuredebug)    | Enable or disable debug mode                                   | 
 | [copyconfig](#copyconfig)      | Activate pre-defined configuration templates for this instance | 
 
 :::note
@@ -151,15 +149,8 @@ https://localhost:8080/lumen-app-email/htdocs
 
 ### `configure:api`
 
-Specify the paths to the APIs exposed by this instance.
+Specify Authentication Providers and paths to the various APIs exposed by this instance.
 
-**lumen-app-email** provides an _auth_-Service and an _email_-Service. The _auth_-Service is required for
-authenticating against the **IMAP**/**SMTP** servers the _email_-Service will connect to.
-
-These settings provide the base-paths to the endpoints the services expose.
-
-This instance will consider any path-segments representing the required API-Version
-path appended to the path automatically.
 
 ```bash
 $ php artisan configure:api
@@ -172,11 +163,22 @@ $ php artisan configure:api
 
 The path to the _email_-Service.
 
+`AUTH_PROVIDER` <a name="auth_provider"></a>
+- Type: `List`
+- Values: `local-mail-account`, `single-imap-user`
+- Default: `local-mail-account`
+
+The Auth Provider used with this instance. `local-mail-account` is the provider used when the client
+sends connection information in the payload of requests.
+`single-imap-user` authenticates a single user against a single IMAP-server. Selecting
+`single-imap-user` will require the configuration of the `APP_AUTH_PATH`.
+
+
 `APP_AUTH_PATH`
 - Type: `String`
 - Default: `rest-imapuser`
 
-The path to the _auth_-Service.
+The path to the _auth_-Service. Depending on the selected `AUTH_PROVIDER`, this setting might not be available.
 
 #### Example
 **lumen-app-email** is available at
@@ -205,7 +207,7 @@ https://localhost:8080/lumen-app-email/htdocs/api/rest-api-email/v2
 
 Omitting a version in the URL will default to the latest version of this API available.
 
-The same applies to the `APP_AUTH_PATH` setting.
+The same applies to the `APP_AUTH_PATH` setting, if configured.
 
 Refer to the [Backend API documentation](https://www.conjoon.org/docs/api/rest-api) for all available API endpoints.
 
@@ -301,6 +303,13 @@ The options available for the cors configuration are as follows:
 
 
 ### IMAP server configurations
+When the instance of **lumen-app-email** was configured with the `single-imap-user` Authentication Provider, you
+will have to maintain a list of IMAP server users may sign in to. 
+
+:::info
+Use [`php artisan configure:api`](#configureapi) for configuring the [Authentication Provider](#auth_provider).
+:::
+
 In order for users to authenticate against IMAP servers, `lumen-app-email` provides a template-configuration file in `app/config/imapserver.php.example`.
 In this file, you can specify an array of mail server configurations. Each entry represents a mail server to which connection may be established, for both sending and receiving messages.
 
