@@ -54,11 +54,20 @@ The directory must not yet exist, otherwise the installer will show an error and
    - `quick`: Will install **conjoon** using its latest release and with demo data from the development release. The production build will be configured with fake endpoints, returning mock data in its responses. 
    - `custom`
      Will install **conjoon** and configure it based on the following settings:
+
+### `Authentication Package`
+- _Type_: `select` / `String`
+- _default_: `extjs-app-imapuser`
+
+The Authentication Package used with this installation. Read more about (authentication-) packages and their impact
+on the behavior of **conjoon** [here](/docs/packages/overview.md).
+
 ### `Base url for auth`
  - _Type_: `String`
  - _default_: `https://ddev-ms-email.ddev.site/rest-imapuser/api/v0/`
 
-Base url where authentication endpoints are found.
+Base url where authentication endpoints are found. Only available if the Authentication Package in the previous step
+supports this.
 
 ### `Base url for email`
 - _Type_: `String`

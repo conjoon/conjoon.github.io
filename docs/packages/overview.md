@@ -12,7 +12,7 @@ We provide official **conjoon** packages.
 
 These packages are responsible for adding module based functionality to your **conjoon** installation.
 
-### Authentication Providers
+### Authentication Packages
 - [@conjoon/extjs-app-imapuser](./extjs-app-imapuser.md)
 - [@conjoon/extjs-app-localmailaccount](./extjs-app-localmailaccount.md)
 
