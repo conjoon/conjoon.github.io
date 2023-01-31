@@ -20,6 +20,9 @@ and follow the instructions on screen.
 Both the [`name`](#name) and the [`targetDir`](#targetDir) can be specified to trigger a [*quick install*](#install-type). If any of these arguments are missing, the installer will require confirmation for these settings from the user. 
 
 :::caution
+**create-conjoon** > V1.0 is only compatible with **conjoon** V1.0 and up. If you want to install a previous version of
+**conjoon** with this tool, replace `latest` in `npx create-conjoon@latest [name] [targetDir]` with the desired **version
+of create-conjoon**.
 This command should be preferably used in an interactive shell so all features are available.
 :::
 
