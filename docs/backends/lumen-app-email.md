@@ -18,6 +18,10 @@ and serves endpoints for reading, writing and sending email messages with **IMAP
 $ composer create-project conjoon/lumen-app-email htdocs "1.*" 
 ```
 
+:::caution
+The install tool of **lumen-app-email** requires [**Composer**](https://getcomposer.org/) >= V2.0.
+:::
+
 :::tip
 If you're looking for a pre-configured environment for running an instance of **lumen-app-email**, [**we might have just the
 right thing for you 👉**](./ddev-ms-email.md).
