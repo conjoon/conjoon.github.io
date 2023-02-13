@@ -38,9 +38,23 @@ Since tests written for **Ext JS** with **Siesta** depend on a functional **Ext 
 ## Installation Steps
 The following guides you through the various steps available during the installation. 
 
-### 1. Target folder 
+### 1. Add default test-installation 
+- _Type_: `bool`
+- _default_: `false`
+
+
+**create-siesta** starts with asking you if you want to create a default test-suite. This will add a few default
+tests to your project and is **recommended if you have not created any tests on your own yet**. You will be able
+to reuse the test-suite for your project.
+
+If you are using **create-siesta** in a project where a test-folder and tests already exists, you most likely
+read this documentation because you need to build an environment to run these tests. In this case, you can skip this step.
+
+### 2. Target folder 
 - _Type_: `String`
 - _default_: `tests`
+
+**This step is only available if you chose to build a default test-suite**.
 
 This step queries the name of the folder where the **Siesta** tests should be made available.
 
@@ -49,12 +63,12 @@ This step queries the name of the folder where the **Siesta** tests should be ma
 If the folder with the selected name already exists, `create-siesta` asks if it is allowed to override the contents. If the question is negated, this installation step will be repeated so a different folder name can be specified.
 
 
-### 2. Building the Ext JS SDK
+### 3. Building the Ext JS SDK
 - _Type_: `bool`
 
 If the current environment requires a build of **Ext JS**, `create-siesta` can be advised to take care of the build process for the **Sencha Ext JS** sources.
 
-#### 2.1 Target folder for the Ext JS SDK {#extjs_target}
+#### 3.1 Target folder for the Ext JS SDK {#extjs_target}
 - _Type_: `String`
 - _default_: `.extjs-build`
 
@@ -69,7 +83,7 @@ If the **Ext JS SDK** is built with `create-siesta`, both the `.gitignore` and `
 If any of these files do not exist, they will be created by `create-siesta`.
 :::
 
-### 3. Updating the package.json
+### 4. Updating the package.json
 - _Type_: `bool`
 
 `create-siesta` provides two different ways of [installing package-dependencies](#dependencies): `--save-dev` or `--no-save` with `npm i`. 
@@ -85,7 +99,7 @@ If no `package.json` is available in the current working directory, `create-sies
 :::
 
 
-### 4. Package Dependencies {#dependencies}
+### 5. Package Dependencies {#dependencies}
 - _Type_: `list`
 - _Options_: 
   - `local-web-server` 
@@ -110,12 +124,12 @@ In order for **Siesta** to properly work, it is recommended to install all sugge
 If all required packages are already installed in the current working directory's `node_modules`-folder, this step will not be available until `create-siesta` was invoked with the `-f`/`--force`-option.
 :::
 
-#### 4.1 Skip Package Version Selection
+#### 5.1 Skip Package Version Selection
 - _Type_: `bool`
 
 `create-siesta` allows for selecting the required version for each of the packages selected in [step 4](#dependencies) with [step 4.2](#versions). With this option, `create-siesta` can automatically decide which version to install.
 
-#### 4.2 Package Version Selection {#versions}
+#### 5.2 Package Version Selection {#versions}
 - _Type_: _list_
 - _Options_: _various_
 
