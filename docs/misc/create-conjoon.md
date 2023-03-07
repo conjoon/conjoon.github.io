@@ -29,7 +29,7 @@ versions can be managed with [nvm](https://github.com/nvm-sh/nvm).
 ## Installation Settings
 The following guides you through the options available during the installation. 
 
-### Installation Type {#installType}
+### `Installation Type` {#installType}
 - _Type_: `select`
 - _values_: `npm`, `release`
 - _default_: `release`
@@ -44,7 +44,7 @@ Use the **npm** installation type if you want to develop with **conjoon**.
 Use the **release** installation type if you want to install a production-ready instance of **conjoon**.
 :::
 
-### Target Folder {#targetDir}
+### `Target Folder` {#targetDir}
 - _Type_: `String`
 - _default_: `./conjoon`
 
@@ -77,3 +77,14 @@ can be found at the official [**conjoon**-repository](https://github.com/conjoon
 **create-conjoon** > V1.0 is only compatible with **conjoon** V1.0 and up. If you want to install a previous version of
 **conjoon** with this tool, replace `latest` in `npx create-conjoon@latest` with the desired **version
 of create-conjoon**.
+
+### On merging configurations
+
+**create-conjoon** will try to merge configurations when the installation type is set to `release` and the target
+folder already contains an instance of **conjoon**. The configuration keys from the previous instance will only
+end up in the new instance if those keys are recognized by the version to be installed.
+
+Thus, if you have **added additional configuration** options, you need to add them **manually** to the new instance.
+
+A backup folder containing previous configuration files will be created during the merge process, so you can easily check
+which keys were not recognized by the installed instance.
