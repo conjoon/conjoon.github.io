@@ -4,7 +4,7 @@
         "bindings": {
             "$defs": {
                 "RequestConfiguratorSingleton": {
-                    "className": "conjoon.cn_imapuser.data.request.Configurator",
+                    "xclass": "conjoon.cn_imapuser.data.request.Configurator",
                     "singleton": true
                 }
             },
