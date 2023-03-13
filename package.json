@@ -12,6 +12,7 @@
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
+    "postversion": "git push && git push --tags",
     "release": "standard-version --commit-all",
     "release:patch": "standard-version --commit-all --release-as patch && npm run postversion",
     "release:minor": "standard-version --commit-all --release-as minor && npm run postversion",
