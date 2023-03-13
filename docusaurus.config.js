@@ -1,7 +1,7 @@
 /**
  * conjoon
  * conjoon.github.io
- * Copyright (C) 2022 Thorsten Suckow-Homberg https://github.com/conjoon/conjoon.github.io
+ * Copyright (C) 2022-2023 Thorsten Suckow-Homberg https://github.com/conjoon/conjoon.github.io
  *
  * Permission is hereby granted, free of charge, to any person
  * obtaining a copy of this software and associated documentation
@@ -197,7 +197,7 @@ const config = {
                     ]
                 }
             ],
-            copyright: `Copyright © 2007-${new Date().getFullYear()} Thorsten Suckow-Homberg. This website is proudly built with <a href="https://docusaurus.io">Docusaurus</a>.`
+            copyright: `Copyright © 2007-${new Date().getFullYear()} <a target="_blank" href="https://thorsten.suckow-homberg.de">Thorsten Suckow-Homberg</a>. This website is proudly built with <a target="_blank" href="https://docusaurus.io">Docusaurus</a>.`
         },
         prism: {
             theme: darkCodeTheme
