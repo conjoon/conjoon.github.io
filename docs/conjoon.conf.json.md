@@ -113,6 +113,7 @@ There are a two relevant fields that are used with each package configuration: `
  {
     "packages": {
         "package-calendar": {
+            "disabled": false,
             "autoLoad": {
                 "registerController": true
             },
@@ -123,6 +124,13 @@ There are a two relevant fields that are used with each package configuration: `
     }
 }
 ```
+#### `disabled`
+- Type: `bool`
+
+`disabled` allows for enabling/disabling a package. Packages are enabled by default. Use `"disabled":true` to 
+disable a package. The particular package will then be ignored by **conjoon**. 
+
+
 #### `autoLoad`
  - Type: `Object`|`bool`
 

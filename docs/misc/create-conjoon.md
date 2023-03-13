@@ -9,7 +9,7 @@ A scaffolding utility to help you instantly set up a functional **conjoon** app.
 ## Usage {#usage}
 
 ```bash
-npx create-conjoon@latest [name] [targetDir]
+npx create-conjoon@latest 
 ```
 or
 ```bash
@@ -17,61 +17,74 @@ npm init @conjoon/conjoon@latest
 ```
 and follow the instructions on screen.
 
-Both the [`name`](#name) and the [`targetDir`](#targetDir) can be specified to trigger a [*quick install*](#install-type). If any of these arguments are missing, the installer will require confirmation for these settings from the user. 
 
 :::caution
 This command should be preferably used in an interactive shell so all features are available.
 :::
 
 ## Requirements
-[Node.js](https://nodejs.org) version **16.14** or above (check your installed version with `node-v`). Multiple Node versions can be managed with [nvm](https://github.com/nvm-sh/nvm).
+[Node.js](https://nodejs.org) version **16.14** or above (check your installed version with `node-v`). Multiple Node 
+versions can be managed with [nvm](https://github.com/nvm-sh/nvm).
 
 ## Installation Settings
 The following guides you through the options available during the installation. 
 
-### Name {#name}
-- _Type_: `String`
-- _default_: `conjoon`
+### `Installation Type` {#installType}
+- _Type_: `select`
+- _values_: `npm`, `release`
+- _default_: `release`
 
-The `name` will be used as the `name` field in the created app's `package.json` and the `title` field in the related configurations. 
+The step allows you to choose whether you want to install up a pre-built instance (`release`, i.e. an official build) or the
+development build (`npm`) of **conjoon**. While the official build is ready to be used as a frontend in production, the 
+latter will create the development environment with the necessary sources.
 
-The `name` will also be used as the default site's path, if [`targetDir`](#targetDir) was initially omitted. The site path is computed relative to the current working directory.
+:::tip
+Use the **npm** installation type if you want to develop with **conjoon**.
 
-:::note
-Make sure to adjust the meta fields found in the `package.json` (repository, author and such) if you plan to fork **conjoon** and create your own project from it. 
+Use the **release** installation type if you want to install a production-ready instance of **conjoon**.
 :::
 
-### Target Directory {#targetDir}
+### `Target Folder` {#targetDir}
 - _Type_: `String`
+- _default_: `./conjoon`
 
-The `targetDir` will be used as the target directory for this conjoon installation.
-The directory must not yet exist, otherwise the installer will show an error and request a new target directory. If omitted, defaults to `./<name>`, but still requires confirmation of the user.
+The `target folder` will be used as the parent directory for *this* instance of **conjoon**.
 
+:::warning installation type `release`
+The installer allows to use an _existing_ directory for a [`release`](#installType). <br />
+**create-conjoon** will query the user's permission to overwrite the contents of an existing directory. <br />
+**Back up any important data of this directory when opting for overwriting it.**<br />
+**create-conjoon** itself will merge any existing configuration of a previous **conjoon** installation
+found in this directory into the configuration of the new installation before overwriting it.
+:::
 
-### Installation Type {#install-type}
- - _Type_: `selection`
- - _values_:
-   - `quick`: Will install **conjoon** using its latest release and with demo data from the development release. The production build will be configured with fake endpoints, returning mock data in its responses. 
-   - `custom`
-     Will install **conjoon** and configure it based on the following settings:
-### `Base url for auth`
- - _Type_: `String`
- - _default_: `https://ddev-ms-email.ddev.site/rest-imapuser/api/v0/`
+For [`npm`](#installType)-installations, this directory must not exist yet. Otherwise, the user is prompted to 
+provide another target directory.
 
-Base url where authentication endpoints are found.
-
-### `Base url for email`
-- _Type_: `String`
-- _default_: `https://ddev-ms-email.ddev.site/rest-api-email/api/v0/`
-
-Base url where the [rest-api-email](/docs/rest-api/rest-api-email.md)-endpoints can be found
 
 ### `Version`
 - _Type_: `select`/`String`
 - _default_: `<latest release>`
 
-Provides a list of the last 5 releases, and a text input to manually enter the required version, if the user wants to install an older release of **conjoon**. Requested versions will be looked up in the NPM registry. A message will be shown if the release was not found in the registry 
+Provides a list of the last 5 releases, and a text input to manually enter the required version. 
+Versions displayed are queried from **conjoon**'s npm registry and are the latest stable versions (i.e. `npm view @conjoon/conjoon@* version`).
 
-:::tip
-Use the **quick** installation to get the **conjoon** frontend running locally. You can always configure the application to a later point for connecting to existing [backends](/docs/backends/overview.md)
-:::
+If you want to install a pre-release, use `<enter manually>` for specifying the pre-release version. (pre-)releases
+can be found at the official [**conjoon**-repository](https://github.com/conjoon/conjoon/releases).
+
+## Additional notes
+
+**create-conjoon** > V1.0 is only compatible with **conjoon** V1.0 and up. If you want to install a previous version of
+**conjoon** with this tool, replace `latest` in `npx create-conjoon@latest` with the desired **version
+of create-conjoon**.
+
+### On merging configurations
+
+**create-conjoon** will try to merge configurations when the installation type is set to `release` and the target
+folder already contains an instance of **conjoon**. The configuration keys from the previous instance will only
+end up in the new instance if those keys are recognized by the version to be installed.
+
+Thus, if you have **added additional configuration** options, you need to add them **manually** to the new instance.
+
+A backup folder containing previous configuration files will be created during the merge process, so you can easily check
+which keys were not recognized by the installed instance.

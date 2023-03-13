@@ -1,6 +1,6 @@
 ---
 id: extjs-dev-imapusersim
-title: 📦 extjs-dev-imapusersim
+title: 🔧 extjs-dev-imapusersim
 slug: /api/packages/@conjoon/extjs-ctrl-simmanager
 ---
 

@@ -1,10 +1,11 @@
 ---
 id: extjs-app-imapuser
-title: 📦 extjs-app-imapuser
+title: 🔑 extjs-app-imapuser
 slug: /api/packages/@conjoon/extjs-app-imapuser
 ---
  
-[Application Package](/docs/packages/overview.md#application-packages) for providing the UI and client logic for user authentication against a configurable endpoint. 
+[Application Package](/docs/packages/overview.md#application-packages) serving as Authentication Provider.
+Provides the UI and client logic for authentication against single IMAP servers. 
 
 This package supports [rest-api-email](/docs/rest-api/rest-api-email.md) for authenticating
 a user against an IMAP server, where the sign-in crendentials for an IMAP-account are the login-information

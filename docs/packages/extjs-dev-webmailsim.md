@@ -1,6 +1,6 @@
 ---
 id: extjs-dev-webmailsim
-title: 📦 extjs-dev-webmailsim
+title: 🔧 extjs-dev-webmailsim
 slug: /api/packages/@conjoon/extjs-dev-webmailsim
 ---
 

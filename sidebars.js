@@ -41,6 +41,7 @@ const sidebars = {
             link: {type: "doc", id: "packages/overview"},
             items: [
                 "packages/extjs-app-imapuser",
+                "packages/extjs-app-localmailaccount",
                 "packages/extjs-app-webmail",
                 "packages/extjs-dev-imapusersim",
                 "packages/extjs-dev-webmailsim",
