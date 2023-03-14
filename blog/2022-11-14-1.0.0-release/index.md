@@ -4,16 +4,16 @@ authors: [ThorstenSuckow]
 tags: [update, release, email, major, ci]
 ---
 
-We're happy to announce **conjoon 1.0**, our very first major release.
+I'm happy to announce **conjoon 1.0**, the very first major release.
 
-For updating to the latest version, simply use our [**installer**](docs/api/misc/@conjoon/create-conjoon). 
+For updating to the latest version, simply use the [**installer**](docs/api/misc/@conjoon/create-conjoon). 
 It will let you select the latest release when opting for the version to install.
 
 ![](./img/create-conjoon.png)
 
 ### Highlights
 
-**v1.0.0** marks the first major release for our JavaScript Email frontend, over 100 tickets related 
+**v1.0.0** marks the first major release for the JavaScript Email frontend, over 100 tickets related 
 to [bugfixes, optimizations and minor features](https://github.com/orgs/conjoon/projects/3) across all projects where
 closed.
 
