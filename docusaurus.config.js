@@ -99,6 +99,14 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+        algolia: {
+            appId: "HOEEWHYML9",
+            apiKey: "840ee820c404767a52548f9c3d27b7ee",
+            indexName: "conjoon",
+            contextualSearch: true,
+            searchParameters: {},
+            searchPagePath: "search",
+        },
         docs: {
             sidebar: {
                 hideable: true,

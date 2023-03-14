@@ -148,4 +148,7 @@ div[class^='announcementBar_'] {
   height:15px;
 }
 
-
+[data-theme='dark'] .DocSearch-Hit[aria-selected=true] a  {
+  background-color: rgba(173, 173, 173, 0.24);
+  border: 1px solid var(--docsearch-primary-color);
+}
