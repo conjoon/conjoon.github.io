@@ -23,6 +23,7 @@ An overview of a **conjoon** configuration can be categorized into:
  - [Application settings](#application-settings)
  - [Package configurations](#package-configurations)
  - [Services](#services)
+ - [Dependency Injection](#dependency-injection-configuration)
  - [Plugins](#plugins)
 
 For exact reference to each of the configurable fields, you may refer to the [conjoon.conf.json reference](conjoon.conf.json).
@@ -45,6 +46,15 @@ The [`services`](conjoon.conf.json#services)-section allows for configuring serv
 :::info
 If you are interested in how the ServiceLocator works with **conjoon**, you can follow [this guide](/docs/guides/servicelocator.md).
 :::
+
+### Dependency Injection Configuration
+
+The [`ioc`](conjoon.conf.json#ioc)-section allows for configuring bindings for the **Inversion of Control**-container used in **conjoon**, making it possible to configure dependencies to the low-level API globally for the application instance.
+
+:::info
+If you are interested in how the **IoC**/**DI** works with **conjoon**, you can follow [this guide](/docs/guides/dependencyinjection.md).
+:::
+
 
 ### Plugins  
 Plugins are divided into `application`- and `component`-plugins, and allow for altering the functionality of components and the application itself.
