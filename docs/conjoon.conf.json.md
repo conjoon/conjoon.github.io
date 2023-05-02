@@ -124,11 +124,15 @@ There are a two relevant fields that are used with each package configuration: `
     }
 }
 ```
-#### `disabled`
+#### `enabled`
 - Type: `bool`
 
-`disabled` allows for enabling/disabling a package. Packages are enabled by default. Use `"disabled":true` to 
+`enabled` allows for enabling/disabling a package. Packages are enabled by default. Use `"enabled":false` to 
 disable a package. The particular package will then be ignored by **conjoon**. 
+
+:::note
+The semantic complement `disabled` can also be used instead of `enabled`.
+:::
 
 
 #### `autoLoad`
