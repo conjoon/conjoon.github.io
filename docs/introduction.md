@@ -22,16 +22,29 @@ Install [Node.js](https://nodejs.org/en/download) and [create](/docs/misc/create
 npx create-conjoon@latest
 ```
 
-Follow the instructions on screen.
+Pick the install type, then follow the instructions on screen. Refer to [the docs](/docs/api/misc/@conjoon/create-conjoon) for more information on how to use **create-conjoon** 
+
+
+
+<details>
+<summary>If you picked "npm" as the release type...</summary>
+
+<div><span>Type in</span>
+<pre>
 
 ```bash
-cd target_folder
-npm run stage
+$ cd target_folder
+$ npm run stage
 ```
+</pre>
 
 Your site starts at `http://localhost:9001` with a production build of **conjoon**.
 
-Open `build/production/conjoon/desktop/resources/coon-js/conjoon.conf.json` and edit the packages' endpoints if you have a [backend](/docs/backends/overview.md) available. 
+Open `build/production/conjoon/desktop/resources/coon-js/conjoon.conf.json` and edit the packages' endpoints if you have a [backend](/docs/backends/overview.md) available.
+</div>
+</details>
+
+
 
 :::tip 
 You have just installed the latest build available for **conjoon**.
