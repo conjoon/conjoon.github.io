@@ -1,7 +1,7 @@
 ---
 title: Pre-Release v2.0.0-alpha
 authors: [ThorstenSuckow]
-tags: [update, minor release, qol]
+tags: [update, pre-release, alpha]
 ---
 
 **conjoon v2.0.0-alpha.0** was just released 🎉, offering a glimpse of what's to come with the upcoming `2.0` release.
