@@ -21,8 +21,8 @@
             <uri>http://twitter.com/ThorstenSuckow</uri>
         </author>
         <category label="update" term="update"/>
-        <category label="minor release" term="minor release"/>
-        <category label="qol" term="qol"/>
+        <category label="pre-release" term="pre-release"/>
+        <category label="alpha" term="alpha"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[conjoon 1.2.1]]></title>

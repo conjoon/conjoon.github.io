@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkconjoon=self.webpackChunkconjoon||[]).push([[8250],{270:function(a){a.exports=JSON.parse('{"label":"alpha","permalink":"/blog/tags/alpha","allTagsPath":"/blog/tags","count":1}')}}]);

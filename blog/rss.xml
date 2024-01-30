@@ -18,8 +18,8 @@
             <content:encoded><![CDATA[<p><strong>conjoon v2.0.0-alpha.0</strong> was just released 🎉, offering a glimpse of what's to come with the upcoming <code>2.0</code> release.</p><p>The <code>2.0</code> release-branch is mainly focusing on achieving better compliance with the <a href="https://jsonapi.org" target="_blank" rel="noopener noreferrer">JSON:API</a>-specifications that are documented in the <a href="/docs/api/rest-api/@conjoon/rest-api-description/rest-api-email">rest-api-description</a> available with <a href="https://github.com/conjoon/rest-api-description/tree/php-lib-conjoon%238" target="_blank" rel="noopener noreferrer">the php-lib-conjoon#8-branch</a>.</p><p>Pre-releases of <a href="/docs/api/packages/@conjoon/extjs-app-webmail">extjs-app-webmail</a> and <a href="/docs/api/packages/@conjoon/extjs-dev-webmailsim">extjs-dev-webmailsim</a> are bundled with this version and demonstrate the changes backends should be expecting if they wish to <a href="/docs/api/backends">provide communication endpoints</a> for the webmail client.</p><p>Happy testing! ☃️</p>]]></content:encoded>
             <author>thorsten@suckow-homberg.de (Thorsten Suckow-Homberg)</author>
             <category>update</category>
-            <category>minor release</category>
-            <category>qol</category>
+            <category>pre-release</category>
+            <category>alpha</category>
         </item>
         <item>
             <title><![CDATA[conjoon 1.2.1]]></title>
