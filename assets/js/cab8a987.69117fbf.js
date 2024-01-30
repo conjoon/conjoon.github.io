@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkconjoon=self.webpackChunkconjoon||[]).push([[9045],{268:function(o){o.exports=JSON.parse('{"permalink":"/blog/tags/update/page/2","page":2,"postsPerPage":5,"totalPages":2,"totalCount":6,"previousPage":"/blog/tags/update","blogDescription":"Blog","blogTitle":"Blog"}')}}]);

@@ -2,12 +2,28 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://conjoon.org/blog</id>
     <title>conjoon Blog</title>
-    <updated>2023-05-02T00:00:00.000Z</updated>
+    <updated>2024-01-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://conjoon.org/blog"/>
     <subtitle>conjoon Blog</subtitle>
     <icon>https://conjoon.org/img/favicon.ico</icon>
-    <rights>Copyright © 2023 conjoon Open Source Project</rights>
+    <rights>Copyright © 2024 conjoon Open Source Project</rights>
+    <entry>
+        <title type="html"><![CDATA[Pre-Release v2.0.0-alpha]]></title>
+        <id>/2024/01/30/conjoon-pre-release-2.0.0-alpha.0</id>
+        <link href="https://conjoon.org/blog/2024/01/30/conjoon-pre-release-2.0.0-alpha.0"/>
+        <updated>2024-01-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[conjoon v2.0.0-alpha.0 was just released 🎉, offering a glimpse of what's to come with the upcoming 2.0 release.]]></summary>
+        <content type="html"><![CDATA[<p><strong>conjoon v2.0.0-alpha.0</strong> was just released 🎉, offering a glimpse of what's to come with the upcoming <code>2.0</code> release.</p><p>The <code>2.0</code> release-branch is mainly focusing on achieving better compliance with the <a href="https://jsonapi.org" target="_blank" rel="noopener noreferrer">JSON:API</a>-specifications that are documented in the <a href="/docs/api/rest-api/@conjoon/rest-api-description/rest-api-email">rest-api-description</a> available with <a href="https://github.com/conjoon/rest-api-description/tree/php-lib-conjoon%238" target="_blank" rel="noopener noreferrer">the php-lib-conjoon#8-branch</a>.</p><p>Pre-releases of <a href="/docs/api/packages/@conjoon/extjs-app-webmail">extjs-app-webmail</a> and <a href="/docs/api/packages/@conjoon/extjs-dev-webmailsim">extjs-dev-webmailsim</a> are bundled with this version and demonstrate the changes backends should be expecting if they wish to <a href="/docs/api/backends">provide communication endpoints</a> for the webmail client.</p><p>Happy testing! ☃️</p>]]></content>
+        <author>
+            <name>Thorsten Suckow-Homberg</name>
+            <email>thorsten@suckow-homberg.de</email>
+            <uri>http://twitter.com/ThorstenSuckow</uri>
+        </author>
+        <category label="update" term="update"/>
+        <category label="minor release" term="minor release"/>
+        <category label="qol" term="qol"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[conjoon 1.2.1]]></title>
         <id>/2023/05/02/1.2.1-release</id>

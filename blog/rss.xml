@@ -4,11 +4,23 @@
         <title>conjoon Blog</title>
         <link>https://conjoon.org/blog</link>
         <description>conjoon Blog</description>
-        <lastBuildDate>Tue, 02 May 2023 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 30 Jan 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
-        <copyright>Copyright © 2023 conjoon Open Source Project</copyright>
+        <copyright>Copyright © 2024 conjoon Open Source Project</copyright>
+        <item>
+            <title><![CDATA[Pre-Release v2.0.0-alpha]]></title>
+            <link>https://conjoon.org/blog/2024/01/30/conjoon-pre-release-2.0.0-alpha.0</link>
+            <guid>/2024/01/30/conjoon-pre-release-2.0.0-alpha.0</guid>
+            <pubDate>Tue, 30 Jan 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[conjoon v2.0.0-alpha.0 was just released 🎉, offering a glimpse of what's to come with the upcoming 2.0 release.]]></description>
+            <content:encoded><![CDATA[<p><strong>conjoon v2.0.0-alpha.0</strong> was just released 🎉, offering a glimpse of what's to come with the upcoming <code>2.0</code> release.</p><p>The <code>2.0</code> release-branch is mainly focusing on achieving better compliance with the <a href="https://jsonapi.org" target="_blank" rel="noopener noreferrer">JSON:API</a>-specifications that are documented in the <a href="/docs/api/rest-api/@conjoon/rest-api-description/rest-api-email">rest-api-description</a> available with <a href="https://github.com/conjoon/rest-api-description/tree/php-lib-conjoon%238" target="_blank" rel="noopener noreferrer">the php-lib-conjoon#8-branch</a>.</p><p>Pre-releases of <a href="/docs/api/packages/@conjoon/extjs-app-webmail">extjs-app-webmail</a> and <a href="/docs/api/packages/@conjoon/extjs-dev-webmailsim">extjs-dev-webmailsim</a> are bundled with this version and demonstrate the changes backends should be expecting if they wish to <a href="/docs/api/backends">provide communication endpoints</a> for the webmail client.</p><p>Happy testing! ☃️</p>]]></content:encoded>
+            <author>thorsten@suckow-homberg.de (Thorsten Suckow-Homberg)</author>
+            <category>update</category>
+            <category>minor release</category>
+            <category>qol</category>
+        </item>
         <item>
             <title><![CDATA[conjoon 1.2.1]]></title>
             <link>https://conjoon.org/blog/2023/05/02/1.2.1-release</link>
